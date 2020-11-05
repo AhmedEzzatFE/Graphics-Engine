@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Graphics_Engine">
-				<Option output="/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Graphics_Engine" prefix_auto="0" extension_auto="0"/>
+			<Target title="EX03_UNIFORMS">
+				<Option output="/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/EX03_UNIFORMS" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -59,14 +59,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Graphics_Engine"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 EX03_UNIFORMS"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Graphics_Engine/fast">
-				<Option output="/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Graphics_Engine" prefix_auto="0" extension_auto="0"/>
+			<Target title="EX03_UNIFORMS/fast">
+				<Option output="/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/EX03_UNIFORMS" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -87,7 +87,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 Graphics_Engine/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 EX03_UNIFORMS/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -149,8 +149,41 @@
 		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/vendor/glfw/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/main.cpp">
-			<Option target="Graphics_Engine"/>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/application.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/application.hpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/mesh/mesh-utils.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/mesh/mesh-utils.hpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/shader.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/shader.hpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/screenshot.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/screenshot.h">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/texture-utils.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/texture-utils.h">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/source/examples/ex03_uniforms.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/src/gl.c">
+			<Option target="EX03_UNIFORMS"/>
 		</Unit>
 		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glfw/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
@@ -235,6 +268,33 @@
 		</Unit>
 		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glfw/src/xkb_unicode.h">
 			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui.h">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_demo.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_draw.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.h">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.h">
+			<Option target="EX03_UNIFORMS"/>
+		</Unit>
+		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_widgets.cpp">
+			<Option target="EX03_UNIFORMS"/>
 		</Unit>
 		<Unit filename="/home/ahmedezzat/CLionProjects/Graphics-Engine/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

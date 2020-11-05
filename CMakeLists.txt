@@ -45,4 +45,6 @@ include_directories(
         vendor/imgui
         vendor/utils
 )
-add_executable(Graphics_Engine main.cpp)
+add_executable(EX03_UNIFORMS source/examples/ex03_uniforms.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
+target_link_libraries(EX03_UNIFORMS glfw)
+

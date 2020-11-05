@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Graphics_Engine
+# Target rules for targets named EX03_UNIFORMS
 
 # Build rule for target.
-Graphics_Engine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Graphics_Engine
-.PHONY : Graphics_Engine
+EX03_UNIFORMS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EX03_UNIFORMS
+.PHONY : EX03_UNIFORMS
 
 # fast build rule for target.
-Graphics_Engine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics_Engine.dir/build.make CMakeFiles/Graphics_Engine.dir/build
-.PHONY : Graphics_Engine/fast
+EX03_UNIFORMS/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/build
+.PHONY : EX03_UNIFORMS/fast
 
 #=============================================================================
 # Target rules for targets named glfw
@@ -156,32 +156,356 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
-main.o: main.cpp.o
+source/common/application.o: source/common/application.cpp.o
 
-.PHONY : main.o
+.PHONY : source/common/application.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics_Engine.dir/build.make CMakeFiles/Graphics_Engine.dir/main.cpp.o
-.PHONY : main.cpp.o
+source/common/application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.o
+.PHONY : source/common/application.cpp.o
 
-main.i: main.cpp.i
+source/common/application.i: source/common/application.cpp.i
 
-.PHONY : main.i
+.PHONY : source/common/application.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics_Engine.dir/build.make CMakeFiles/Graphics_Engine.dir/main.cpp.i
-.PHONY : main.cpp.i
+source/common/application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.i
+.PHONY : source/common/application.cpp.i
 
-main.s: main.cpp.s
+source/common/application.s: source/common/application.cpp.s
 
-.PHONY : main.s
+.PHONY : source/common/application.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics_Engine.dir/build.make CMakeFiles/Graphics_Engine.dir/main.cpp.s
-.PHONY : main.cpp.s
+source/common/application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.s
+.PHONY : source/common/application.cpp.s
+
+source/common/mesh/mesh-utils.o: source/common/mesh/mesh-utils.cpp.o
+
+.PHONY : source/common/mesh/mesh-utils.o
+
+# target to build an object file
+source/common/mesh/mesh-utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.o
+.PHONY : source/common/mesh/mesh-utils.cpp.o
+
+source/common/mesh/mesh-utils.i: source/common/mesh/mesh-utils.cpp.i
+
+.PHONY : source/common/mesh/mesh-utils.i
+
+# target to preprocess a source file
+source/common/mesh/mesh-utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.i
+.PHONY : source/common/mesh/mesh-utils.cpp.i
+
+source/common/mesh/mesh-utils.s: source/common/mesh/mesh-utils.cpp.s
+
+.PHONY : source/common/mesh/mesh-utils.s
+
+# target to generate assembly for a file
+source/common/mesh/mesh-utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.s
+.PHONY : source/common/mesh/mesh-utils.cpp.s
+
+source/common/shader.o: source/common/shader.cpp.o
+
+.PHONY : source/common/shader.o
+
+# target to build an object file
+source/common/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.o
+.PHONY : source/common/shader.cpp.o
+
+source/common/shader.i: source/common/shader.cpp.i
+
+.PHONY : source/common/shader.i
+
+# target to preprocess a source file
+source/common/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.i
+.PHONY : source/common/shader.cpp.i
+
+source/common/shader.s: source/common/shader.cpp.s
+
+.PHONY : source/common/shader.s
+
+# target to generate assembly for a file
+source/common/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.s
+.PHONY : source/common/shader.cpp.s
+
+source/common/texture/screenshot.o: source/common/texture/screenshot.cpp.o
+
+.PHONY : source/common/texture/screenshot.o
+
+# target to build an object file
+source/common/texture/screenshot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.o
+.PHONY : source/common/texture/screenshot.cpp.o
+
+source/common/texture/screenshot.i: source/common/texture/screenshot.cpp.i
+
+.PHONY : source/common/texture/screenshot.i
+
+# target to preprocess a source file
+source/common/texture/screenshot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.i
+.PHONY : source/common/texture/screenshot.cpp.i
+
+source/common/texture/screenshot.s: source/common/texture/screenshot.cpp.s
+
+.PHONY : source/common/texture/screenshot.s
+
+# target to generate assembly for a file
+source/common/texture/screenshot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.s
+.PHONY : source/common/texture/screenshot.cpp.s
+
+source/common/texture/texture-utils.o: source/common/texture/texture-utils.cpp.o
+
+.PHONY : source/common/texture/texture-utils.o
+
+# target to build an object file
+source/common/texture/texture-utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.o
+.PHONY : source/common/texture/texture-utils.cpp.o
+
+source/common/texture/texture-utils.i: source/common/texture/texture-utils.cpp.i
+
+.PHONY : source/common/texture/texture-utils.i
+
+# target to preprocess a source file
+source/common/texture/texture-utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.i
+.PHONY : source/common/texture/texture-utils.cpp.i
+
+source/common/texture/texture-utils.s: source/common/texture/texture-utils.cpp.s
+
+.PHONY : source/common/texture/texture-utils.s
+
+# target to generate assembly for a file
+source/common/texture/texture-utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.s
+.PHONY : source/common/texture/texture-utils.cpp.s
+
+source/examples/ex03_uniforms.o: source/examples/ex03_uniforms.cpp.o
+
+.PHONY : source/examples/ex03_uniforms.o
+
+# target to build an object file
+source/examples/ex03_uniforms.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.o
+.PHONY : source/examples/ex03_uniforms.cpp.o
+
+source/examples/ex03_uniforms.i: source/examples/ex03_uniforms.cpp.i
+
+.PHONY : source/examples/ex03_uniforms.i
+
+# target to preprocess a source file
+source/examples/ex03_uniforms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.i
+.PHONY : source/examples/ex03_uniforms.cpp.i
+
+source/examples/ex03_uniforms.s: source/examples/ex03_uniforms.cpp.s
+
+.PHONY : source/examples/ex03_uniforms.s
+
+# target to generate assembly for a file
+source/examples/ex03_uniforms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.s
+.PHONY : source/examples/ex03_uniforms.cpp.s
+
+vendor/glad/src/gl.o: vendor/glad/src/gl.c.o
+
+.PHONY : vendor/glad/src/gl.o
+
+# target to build an object file
+vendor/glad/src/gl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.o
+.PHONY : vendor/glad/src/gl.c.o
+
+vendor/glad/src/gl.i: vendor/glad/src/gl.c.i
+
+.PHONY : vendor/glad/src/gl.i
+
+# target to preprocess a source file
+vendor/glad/src/gl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.i
+.PHONY : vendor/glad/src/gl.c.i
+
+vendor/glad/src/gl.s: vendor/glad/src/gl.c.s
+
+.PHONY : vendor/glad/src/gl.s
+
+# target to generate assembly for a file
+vendor/glad/src/gl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.s
+.PHONY : vendor/glad/src/gl.c.s
+
+vendor/imgui/imgui.o: vendor/imgui/imgui.cpp.o
+
+.PHONY : vendor/imgui/imgui.o
+
+# target to build an object file
+vendor/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.o
+.PHONY : vendor/imgui/imgui.cpp.o
+
+vendor/imgui/imgui.i: vendor/imgui/imgui.cpp.i
+
+.PHONY : vendor/imgui/imgui.i
+
+# target to preprocess a source file
+vendor/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.i
+.PHONY : vendor/imgui/imgui.cpp.i
+
+vendor/imgui/imgui.s: vendor/imgui/imgui.cpp.s
+
+.PHONY : vendor/imgui/imgui.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.s
+.PHONY : vendor/imgui/imgui.cpp.s
+
+vendor/imgui/imgui_demo.o: vendor/imgui/imgui_demo.cpp.o
+
+.PHONY : vendor/imgui/imgui_demo.o
+
+# target to build an object file
+vendor/imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.o
+.PHONY : vendor/imgui/imgui_demo.cpp.o
+
+vendor/imgui/imgui_demo.i: vendor/imgui/imgui_demo.cpp.i
+
+.PHONY : vendor/imgui/imgui_demo.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.i
+.PHONY : vendor/imgui/imgui_demo.cpp.i
+
+vendor/imgui/imgui_demo.s: vendor/imgui/imgui_demo.cpp.s
+
+.PHONY : vendor/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.s
+.PHONY : vendor/imgui/imgui_demo.cpp.s
+
+vendor/imgui/imgui_draw.o: vendor/imgui/imgui_draw.cpp.o
+
+.PHONY : vendor/imgui/imgui_draw.o
+
+# target to build an object file
+vendor/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.o
+.PHONY : vendor/imgui/imgui_draw.cpp.o
+
+vendor/imgui/imgui_draw.i: vendor/imgui/imgui_draw.cpp.i
+
+.PHONY : vendor/imgui/imgui_draw.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.i
+.PHONY : vendor/imgui/imgui_draw.cpp.i
+
+vendor/imgui/imgui_draw.s: vendor/imgui/imgui_draw.cpp.s
+
+.PHONY : vendor/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.s
+.PHONY : vendor/imgui/imgui_draw.cpp.s
+
+vendor/imgui/imgui_impl/imgui_impl_glfw.o: vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o
+
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.o
+
+# target to build an object file
+vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o
+
+vendor/imgui/imgui_impl/imgui_impl_glfw.i: vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
+
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
+
+vendor/imgui/imgui_impl/imgui_impl_glfw.s: vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
+
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
+
+vendor/imgui/imgui_impl/imgui_impl_opengl3.o: vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o
+
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.o
+
+# target to build an object file
+vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o
+
+vendor/imgui/imgui_impl/imgui_impl_opengl3.i: vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
+
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
+
+vendor/imgui/imgui_impl/imgui_impl_opengl3.s: vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
+
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
+.PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
+
+vendor/imgui/imgui_widgets.o: vendor/imgui/imgui_widgets.cpp.o
+
+.PHONY : vendor/imgui/imgui_widgets.o
+
+# target to build an object file
+vendor/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.o
+.PHONY : vendor/imgui/imgui_widgets.cpp.o
+
+vendor/imgui/imgui_widgets.i: vendor/imgui/imgui_widgets.cpp.i
+
+.PHONY : vendor/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.i
+.PHONY : vendor/imgui/imgui_widgets.cpp.i
+
+vendor/imgui/imgui_widgets.s: vendor/imgui/imgui_widgets.cpp.s
+
+.PHONY : vendor/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.s
+.PHONY : vendor/imgui/imgui_widgets.cpp.s
 
 # Help Target
 help:
@@ -191,11 +515,47 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Graphics_Engine"
+	@echo "... EX03_UNIFORMS"
 	@echo "... glfw"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... source/common/application.o"
+	@echo "... source/common/application.i"
+	@echo "... source/common/application.s"
+	@echo "... source/common/mesh/mesh-utils.o"
+	@echo "... source/common/mesh/mesh-utils.i"
+	@echo "... source/common/mesh/mesh-utils.s"
+	@echo "... source/common/shader.o"
+	@echo "... source/common/shader.i"
+	@echo "... source/common/shader.s"
+	@echo "... source/common/texture/screenshot.o"
+	@echo "... source/common/texture/screenshot.i"
+	@echo "... source/common/texture/screenshot.s"
+	@echo "... source/common/texture/texture-utils.o"
+	@echo "... source/common/texture/texture-utils.i"
+	@echo "... source/common/texture/texture-utils.s"
+	@echo "... source/examples/ex03_uniforms.o"
+	@echo "... source/examples/ex03_uniforms.i"
+	@echo "... source/examples/ex03_uniforms.s"
+	@echo "... vendor/glad/src/gl.o"
+	@echo "... vendor/glad/src/gl.i"
+	@echo "... vendor/glad/src/gl.s"
+	@echo "... vendor/imgui/imgui.o"
+	@echo "... vendor/imgui/imgui.i"
+	@echo "... vendor/imgui/imgui.s"
+	@echo "... vendor/imgui/imgui_demo.o"
+	@echo "... vendor/imgui/imgui_demo.i"
+	@echo "... vendor/imgui/imgui_demo.s"
+	@echo "... vendor/imgui/imgui_draw.o"
+	@echo "... vendor/imgui/imgui_draw.i"
+	@echo "... vendor/imgui/imgui_draw.s"
+	@echo "... vendor/imgui/imgui_impl/imgui_impl_glfw.o"
+	@echo "... vendor/imgui/imgui_impl/imgui_impl_glfw.i"
+	@echo "... vendor/imgui/imgui_impl/imgui_impl_glfw.s"
+	@echo "... vendor/imgui/imgui_impl/imgui_impl_opengl3.o"
+	@echo "... vendor/imgui/imgui_impl/imgui_impl_opengl3.i"
+	@echo "... vendor/imgui/imgui_impl/imgui_impl_opengl3.s"
+	@echo "... vendor/imgui/imgui_widgets.o"
+	@echo "... vendor/imgui/imgui_widgets.i"
+	@echo "... vendor/imgui/imgui_widgets.s"
 .PHONY : help
 
 

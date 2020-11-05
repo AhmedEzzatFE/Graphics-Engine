@@ -72,6 +72,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Graphics_Engine.dir/DependInfo.cmake"
+  "CMakeFiles/EX03_UNIFORMS.dir/DependInfo.cmake"
   "vendor/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )

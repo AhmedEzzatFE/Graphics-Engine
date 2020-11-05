@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-de
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Graphics_Engine.dir/all
+all: CMakeFiles/EX03_UNIFORMS.dir/all
 all: vendor/glfw/all
 
 .PHONY : all
@@ -84,7 +84,7 @@ preinstall: vendor/glfw/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Graphics_Engine.dir/clean
+clean: CMakeFiles/EX03_UNIFORMS.dir/clean
 clean: vendor/glfw/clean
 
 .PHONY : clean
@@ -126,31 +126,31 @@ vendor/glfw/src/clean: vendor/glfw/src/CMakeFiles/glfw.dir/clean
 .PHONY : vendor/glfw/src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Graphics_Engine.dir
+# Target rules for target CMakeFiles/EX03_UNIFORMS.dir
 
 # All Build rule for target.
-CMakeFiles/Graphics_Engine.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics_Engine.dir/build.make CMakeFiles/Graphics_Engine.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics_Engine.dir/build.make CMakeFiles/Graphics_Engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Graphics_Engine"
-.PHONY : CMakeFiles/Graphics_Engine.dir/all
+CMakeFiles/EX03_UNIFORMS.dir/all: vendor/glfw/src/CMakeFiles/glfw.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target EX03_UNIFORMS"
+.PHONY : CMakeFiles/EX03_UNIFORMS.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Graphics_Engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Graphics_Engine.dir/all
+CMakeFiles/EX03_UNIFORMS.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles 31
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EX03_UNIFORMS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Graphics_Engine.dir/rule
+.PHONY : CMakeFiles/EX03_UNIFORMS.dir/rule
 
 # Convenience name for target.
-Graphics_Engine: CMakeFiles/Graphics_Engine.dir/rule
+EX03_UNIFORMS: CMakeFiles/EX03_UNIFORMS.dir/rule
 
-.PHONY : Graphics_Engine
+.PHONY : EX03_UNIFORMS
 
 # clean rule for target.
-CMakeFiles/Graphics_Engine.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics_Engine.dir/build.make CMakeFiles/Graphics_Engine.dir/clean
-.PHONY : CMakeFiles/Graphics_Engine.dir/clean
+CMakeFiles/EX03_UNIFORMS.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/clean
+.PHONY : CMakeFiles/EX03_UNIFORMS.dir/clean
 
 #=============================================================================
 # Target rules for target vendor/glfw/src/CMakeFiles/glfw.dir
@@ -159,7 +159,7 @@ CMakeFiles/Graphics_Engine.dir/clean:
 vendor/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target glfw"
 .PHONY : vendor/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
