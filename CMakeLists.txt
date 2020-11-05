@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)   # Selects the minimum version of CMake required to run this file
 project(Graphics_Engine)
-
 # Here we select C++17 with all the standards required and all compiler-specific extensions disabled
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -14,7 +13,6 @@ set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)           # Don't build Installation I
 set(GLFW_USE_HYBRID_HPG ON CACHE BOOL "" FORCE)     # Add variables to use High Performance Graphics Card if available
 add_subdirectory(vendor/glfw)                       # Build the GLFW project to use later as a library
 
-
 # A variable with all the source files of GLAD
 set(GLAD_SOURCE vendor/glad/src/gl.c)
 # A variables with all the source files of Dear ImGui
@@ -26,6 +24,25 @@ set(IMGUI_SOURCES
         vendor/imgui/imgui_impl/imgui_impl_glfw.cpp
         vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp
         )
+
 # Combine all vendor source files together into a single variable
 set(VENDOR_SOURCES ${GLAD_SOURCE} ${IMGUI_SOURCES})
+
+# A variable with all our source files that are common between executable targets (examples)
+set(COMMON_SOURCES
+        source/common/application.cpp
+        source/common/shader.cpp
+        source/common/mesh/mesh-utils.cpp
+        source/common/texture/texture-utils.cpp
+        source/common/texture/screenshot.cpp)
+
+# Define the directories in which to search for the included headers
+include_directories(
+        source/common
+        vendor/glfw/include
+        vendor/glad/include
+        vendor/glm
+        vendor/imgui
+        vendor/utils
+)
 add_executable(Graphics_Engine main.cpp)

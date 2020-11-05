@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glfw/include -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/include -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glm -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/utils 
 
