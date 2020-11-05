@@ -1,5 +1,5 @@
-/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ahmedezzat/CLionProjects/Graphics-Engine
+/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine"
 -- Using X11 for window creation
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug
+-- Build files have been written to: /home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug

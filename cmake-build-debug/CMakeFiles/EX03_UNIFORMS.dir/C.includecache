@@ -6,27 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../vendor/glad/include/KHR/khrplatform.h
-stdint.h
--
-inttypes.h
--
-stdint.h
--
-
-../vendor/glad/include/glad/gl.h
-winapifamily.h
--
-KHR/khrplatform.h
--
-
-/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/src/gl.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-glad/gl.h
--
-

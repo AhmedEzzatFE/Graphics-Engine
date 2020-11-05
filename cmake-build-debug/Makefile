@@ -68,24 +68,13 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmedezzat/CLionProjects/Graphics-Engine
+CMAKE_SOURCE_DIR = "/home/ahmad/Desktop/Graphics Project/Graphics-Engine"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/129/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -98,11 +87,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/129/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named EX03_UNIFORMS
+# Target rules for targets named SHAPECHOICESHADERS
 
 # Build rule for target.
-EX03_UNIFORMS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EX03_UNIFORMS
-.PHONY : EX03_UNIFORMS
+SHAPECHOICESHADERS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SHAPECHOICESHADERS
+.PHONY : SHAPECHOICESHADERS
 
 # fast build rule for target.
-EX03_UNIFORMS/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/build
-.PHONY : EX03_UNIFORMS/fast
+SHAPECHOICESHADERS/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/build
+.PHONY : SHAPECHOICESHADERS/fast
 
 #=============================================================================
 # Target rules for targets named glfw
@@ -162,7 +162,7 @@ source/common/application.o: source/common/application.cpp.o
 
 # target to build an object file
 source/common/application.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.o
 .PHONY : source/common/application.cpp.o
 
 source/common/application.i: source/common/application.cpp.i
@@ -171,7 +171,7 @@ source/common/application.i: source/common/application.cpp.i
 
 # target to preprocess a source file
 source/common/application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.i
 .PHONY : source/common/application.cpp.i
 
 source/common/application.s: source/common/application.cpp.s
@@ -180,7 +180,7 @@ source/common/application.s: source/common/application.cpp.s
 
 # target to generate assembly for a file
 source/common/application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.s
 .PHONY : source/common/application.cpp.s
 
 source/common/mesh/mesh-utils.o: source/common/mesh/mesh-utils.cpp.o
@@ -189,7 +189,7 @@ source/common/mesh/mesh-utils.o: source/common/mesh/mesh-utils.cpp.o
 
 # target to build an object file
 source/common/mesh/mesh-utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.o
 .PHONY : source/common/mesh/mesh-utils.cpp.o
 
 source/common/mesh/mesh-utils.i: source/common/mesh/mesh-utils.cpp.i
@@ -198,7 +198,7 @@ source/common/mesh/mesh-utils.i: source/common/mesh/mesh-utils.cpp.i
 
 # target to preprocess a source file
 source/common/mesh/mesh-utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.i
 .PHONY : source/common/mesh/mesh-utils.cpp.i
 
 source/common/mesh/mesh-utils.s: source/common/mesh/mesh-utils.cpp.s
@@ -207,7 +207,7 @@ source/common/mesh/mesh-utils.s: source/common/mesh/mesh-utils.cpp.s
 
 # target to generate assembly for a file
 source/common/mesh/mesh-utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.s
 .PHONY : source/common/mesh/mesh-utils.cpp.s
 
 source/common/shader.o: source/common/shader.cpp.o
@@ -216,7 +216,7 @@ source/common/shader.o: source/common/shader.cpp.o
 
 # target to build an object file
 source/common/shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.o
 .PHONY : source/common/shader.cpp.o
 
 source/common/shader.i: source/common/shader.cpp.i
@@ -225,7 +225,7 @@ source/common/shader.i: source/common/shader.cpp.i
 
 # target to preprocess a source file
 source/common/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.i
 .PHONY : source/common/shader.cpp.i
 
 source/common/shader.s: source/common/shader.cpp.s
@@ -234,7 +234,7 @@ source/common/shader.s: source/common/shader.cpp.s
 
 # target to generate assembly for a file
 source/common/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.s
 .PHONY : source/common/shader.cpp.s
 
 source/common/texture/screenshot.o: source/common/texture/screenshot.cpp.o
@@ -243,7 +243,7 @@ source/common/texture/screenshot.o: source/common/texture/screenshot.cpp.o
 
 # target to build an object file
 source/common/texture/screenshot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.o
 .PHONY : source/common/texture/screenshot.cpp.o
 
 source/common/texture/screenshot.i: source/common/texture/screenshot.cpp.i
@@ -252,7 +252,7 @@ source/common/texture/screenshot.i: source/common/texture/screenshot.cpp.i
 
 # target to preprocess a source file
 source/common/texture/screenshot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.i
 .PHONY : source/common/texture/screenshot.cpp.i
 
 source/common/texture/screenshot.s: source/common/texture/screenshot.cpp.s
@@ -261,7 +261,7 @@ source/common/texture/screenshot.s: source/common/texture/screenshot.cpp.s
 
 # target to generate assembly for a file
 source/common/texture/screenshot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.s
 .PHONY : source/common/texture/screenshot.cpp.s
 
 source/common/texture/texture-utils.o: source/common/texture/texture-utils.cpp.o
@@ -270,7 +270,7 @@ source/common/texture/texture-utils.o: source/common/texture/texture-utils.cpp.o
 
 # target to build an object file
 source/common/texture/texture-utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.o
 .PHONY : source/common/texture/texture-utils.cpp.o
 
 source/common/texture/texture-utils.i: source/common/texture/texture-utils.cpp.i
@@ -279,7 +279,7 @@ source/common/texture/texture-utils.i: source/common/texture/texture-utils.cpp.i
 
 # target to preprocess a source file
 source/common/texture/texture-utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.i
 .PHONY : source/common/texture/texture-utils.cpp.i
 
 source/common/texture/texture-utils.s: source/common/texture/texture-utils.cpp.s
@@ -288,35 +288,35 @@ source/common/texture/texture-utils.s: source/common/texture/texture-utils.cpp.s
 
 # target to generate assembly for a file
 source/common/texture/texture-utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.s
 .PHONY : source/common/texture/texture-utils.cpp.s
 
-source/examples/ex03_uniforms.o: source/examples/ex03_uniforms.cpp.o
+source/examples/ShapeChoice.o: source/examples/ShapeChoice.cpp.o
 
-.PHONY : source/examples/ex03_uniforms.o
+.PHONY : source/examples/ShapeChoice.o
 
 # target to build an object file
-source/examples/ex03_uniforms.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.o
-.PHONY : source/examples/ex03_uniforms.cpp.o
+source/examples/ShapeChoice.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.o
+.PHONY : source/examples/ShapeChoice.cpp.o
 
-source/examples/ex03_uniforms.i: source/examples/ex03_uniforms.cpp.i
+source/examples/ShapeChoice.i: source/examples/ShapeChoice.cpp.i
 
-.PHONY : source/examples/ex03_uniforms.i
+.PHONY : source/examples/ShapeChoice.i
 
 # target to preprocess a source file
-source/examples/ex03_uniforms.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.i
-.PHONY : source/examples/ex03_uniforms.cpp.i
+source/examples/ShapeChoice.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.i
+.PHONY : source/examples/ShapeChoice.cpp.i
 
-source/examples/ex03_uniforms.s: source/examples/ex03_uniforms.cpp.s
+source/examples/ShapeChoice.s: source/examples/ShapeChoice.cpp.s
 
-.PHONY : source/examples/ex03_uniforms.s
+.PHONY : source/examples/ShapeChoice.s
 
 # target to generate assembly for a file
-source/examples/ex03_uniforms.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.s
-.PHONY : source/examples/ex03_uniforms.cpp.s
+source/examples/ShapeChoice.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.s
+.PHONY : source/examples/ShapeChoice.cpp.s
 
 vendor/glad/src/gl.o: vendor/glad/src/gl.c.o
 
@@ -324,7 +324,7 @@ vendor/glad/src/gl.o: vendor/glad/src/gl.c.o
 
 # target to build an object file
 vendor/glad/src/gl.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.o
 .PHONY : vendor/glad/src/gl.c.o
 
 vendor/glad/src/gl.i: vendor/glad/src/gl.c.i
@@ -333,7 +333,7 @@ vendor/glad/src/gl.i: vendor/glad/src/gl.c.i
 
 # target to preprocess a source file
 vendor/glad/src/gl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.i
 .PHONY : vendor/glad/src/gl.c.i
 
 vendor/glad/src/gl.s: vendor/glad/src/gl.c.s
@@ -342,7 +342,7 @@ vendor/glad/src/gl.s: vendor/glad/src/gl.c.s
 
 # target to generate assembly for a file
 vendor/glad/src/gl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.s
 .PHONY : vendor/glad/src/gl.c.s
 
 vendor/imgui/imgui.o: vendor/imgui/imgui.cpp.o
@@ -351,7 +351,7 @@ vendor/imgui/imgui.o: vendor/imgui/imgui.cpp.o
 
 # target to build an object file
 vendor/imgui/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.o
 .PHONY : vendor/imgui/imgui.cpp.o
 
 vendor/imgui/imgui.i: vendor/imgui/imgui.cpp.i
@@ -360,7 +360,7 @@ vendor/imgui/imgui.i: vendor/imgui/imgui.cpp.i
 
 # target to preprocess a source file
 vendor/imgui/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.i
 .PHONY : vendor/imgui/imgui.cpp.i
 
 vendor/imgui/imgui.s: vendor/imgui/imgui.cpp.s
@@ -369,7 +369,7 @@ vendor/imgui/imgui.s: vendor/imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 vendor/imgui/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.s
 .PHONY : vendor/imgui/imgui.cpp.s
 
 vendor/imgui/imgui_demo.o: vendor/imgui/imgui_demo.cpp.o
@@ -378,7 +378,7 @@ vendor/imgui/imgui_demo.o: vendor/imgui/imgui_demo.cpp.o
 
 # target to build an object file
 vendor/imgui/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.o
 .PHONY : vendor/imgui/imgui_demo.cpp.o
 
 vendor/imgui/imgui_demo.i: vendor/imgui/imgui_demo.cpp.i
@@ -387,7 +387,7 @@ vendor/imgui/imgui_demo.i: vendor/imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 vendor/imgui/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.i
 .PHONY : vendor/imgui/imgui_demo.cpp.i
 
 vendor/imgui/imgui_demo.s: vendor/imgui/imgui_demo.cpp.s
@@ -396,7 +396,7 @@ vendor/imgui/imgui_demo.s: vendor/imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 vendor/imgui/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.s
 .PHONY : vendor/imgui/imgui_demo.cpp.s
 
 vendor/imgui/imgui_draw.o: vendor/imgui/imgui_draw.cpp.o
@@ -405,7 +405,7 @@ vendor/imgui/imgui_draw.o: vendor/imgui/imgui_draw.cpp.o
 
 # target to build an object file
 vendor/imgui/imgui_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.o
 .PHONY : vendor/imgui/imgui_draw.cpp.o
 
 vendor/imgui/imgui_draw.i: vendor/imgui/imgui_draw.cpp.i
@@ -414,7 +414,7 @@ vendor/imgui/imgui_draw.i: vendor/imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 vendor/imgui/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.i
 .PHONY : vendor/imgui/imgui_draw.cpp.i
 
 vendor/imgui/imgui_draw.s: vendor/imgui/imgui_draw.cpp.s
@@ -423,7 +423,7 @@ vendor/imgui/imgui_draw.s: vendor/imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 vendor/imgui/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.s
 .PHONY : vendor/imgui/imgui_draw.cpp.s
 
 vendor/imgui/imgui_impl/imgui_impl_glfw.o: vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o
@@ -432,7 +432,7 @@ vendor/imgui/imgui_impl/imgui_impl_glfw.o: vendor/imgui/imgui_impl/imgui_impl_gl
 
 # target to build an object file
 vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o
 .PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o
 
 vendor/imgui/imgui_impl/imgui_impl_glfw.i: vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
@@ -441,7 +441,7 @@ vendor/imgui/imgui_impl/imgui_impl_glfw.i: vendor/imgui/imgui_impl/imgui_impl_gl
 
 # target to preprocess a source file
 vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
 .PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
 
 vendor/imgui/imgui_impl/imgui_impl_glfw.s: vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
@@ -450,7 +450,7 @@ vendor/imgui/imgui_impl/imgui_impl_glfw.s: vendor/imgui/imgui_impl/imgui_impl_gl
 
 # target to generate assembly for a file
 vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
 .PHONY : vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
 
 vendor/imgui/imgui_impl/imgui_impl_opengl3.o: vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o
@@ -459,7 +459,7 @@ vendor/imgui/imgui_impl/imgui_impl_opengl3.o: vendor/imgui/imgui_impl/imgui_impl
 
 # target to build an object file
 vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o
 .PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o
 
 vendor/imgui/imgui_impl/imgui_impl_opengl3.i: vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
@@ -468,7 +468,7 @@ vendor/imgui/imgui_impl/imgui_impl_opengl3.i: vendor/imgui/imgui_impl/imgui_impl
 
 # target to preprocess a source file
 vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
 .PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
 
 vendor/imgui/imgui_impl/imgui_impl_opengl3.s: vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
@@ -477,7 +477,7 @@ vendor/imgui/imgui_impl/imgui_impl_opengl3.s: vendor/imgui/imgui_impl/imgui_impl
 
 # target to generate assembly for a file
 vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
 .PHONY : vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
 
 vendor/imgui/imgui_widgets.o: vendor/imgui/imgui_widgets.cpp.o
@@ -486,7 +486,7 @@ vendor/imgui/imgui_widgets.o: vendor/imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 vendor/imgui/imgui_widgets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.o
 .PHONY : vendor/imgui/imgui_widgets.cpp.o
 
 vendor/imgui/imgui_widgets.i: vendor/imgui/imgui_widgets.cpp.i
@@ -495,7 +495,7 @@ vendor/imgui/imgui_widgets.i: vendor/imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 vendor/imgui/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.i
 .PHONY : vendor/imgui/imgui_widgets.cpp.i
 
 vendor/imgui/imgui_widgets.s: vendor/imgui/imgui_widgets.cpp.s
@@ -504,7 +504,7 @@ vendor/imgui/imgui_widgets.s: vendor/imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 vendor/imgui/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EX03_UNIFORMS.dir/build.make CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SHAPECHOICESHADERS.dir/build.make CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.s
 .PHONY : vendor/imgui/imgui_widgets.cpp.s
 
 # Help Target
@@ -515,7 +515,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... EX03_UNIFORMS"
+	@echo "... SHAPECHOICESHADERS"
 	@echo "... glfw"
 	@echo "... source/common/application.o"
 	@echo "... source/common/application.i"
@@ -532,9 +532,9 @@ help:
 	@echo "... source/common/texture/texture-utils.o"
 	@echo "... source/common/texture/texture-utils.i"
 	@echo "... source/common/texture/texture-utils.s"
-	@echo "... source/examples/ex03_uniforms.o"
-	@echo "... source/examples/ex03_uniforms.i"
-	@echo "... source/examples/ex03_uniforms.s"
+	@echo "... source/examples/ShapeChoice.o"
+	@echo "... source/examples/ShapeChoice.i"
+	@echo "... source/examples/ShapeChoice.s"
 	@echo "... vendor/glad/src/gl.o"
 	@echo "... vendor/glad/src/gl.i"
 	@echo "... vendor/glad/src/gl.s"

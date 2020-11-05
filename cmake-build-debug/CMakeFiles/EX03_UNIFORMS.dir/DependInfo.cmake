@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/src/gl.c" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glad/src/gl.c" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/glad/src/gl.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -19,18 +19,18 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../vendor/utils"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/application.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/mesh/mesh-utils.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/shader.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/screenshot.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/texture-utils.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/source/examples/ex03_uniforms.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_demo.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_draw.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o"
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_widgets.cpp" "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/application.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/application.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/mesh/mesh-utils.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/mesh/mesh-utils.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/shader.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/shader.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/screenshot.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/screenshot.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/texture-utils.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/common/texture/texture-utils.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/examples/ex03_uniforms.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/source/examples/ex03_uniforms.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_demo.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_demo.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_draw.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_draw.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_widgets.cpp" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/EX03_UNIFORMS.dir/vendor/imgui/imgui_widgets.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -46,7 +46,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

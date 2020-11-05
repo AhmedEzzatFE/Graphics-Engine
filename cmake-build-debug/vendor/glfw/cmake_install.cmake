@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glfw
+# Install script for directory: /home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/vendor/glfw/src/cmake_install.cmake")
+  include("/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/vendor/glfw/src/cmake_install.cmake")
 
 endif()
 
