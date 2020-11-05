@@ -63,10 +63,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/ahmad/Desktop/Graphics Project/Graphics-Engine"
+CMAKE_SOURCE_DIR = /home/ahmedezzat/CLionProjects/Graphics-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SHAPECHOICESHADERS.dir/depend.make
@@ -79,172 +79,172 @@ include CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.o: ../source/examples/ShapeChoice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/examples/ShapeChoice.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/source/examples/ShapeChoice.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/examples/ShapeChoice.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/source/examples/ShapeChoice.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/examples/ShapeChoice.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/source/examples/ShapeChoice.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/source/examples/ShapeChoice.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.o: ../source/common/application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/application.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/application.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/application.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/application.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/application.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/application.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/application.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.o: ../source/common/shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/shader.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/shader.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/shader.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/shader.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/shader.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/shader.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/shader.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.o: ../source/common/mesh/mesh-utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/mesh/mesh-utils.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/mesh/mesh-utils.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/mesh/mesh-utils.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/mesh/mesh-utils.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/mesh/mesh-utils.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/mesh/mesh-utils.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/mesh/mesh-utils.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.o: ../source/common/texture/texture-utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/texture-utils.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/texture-utils.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/texture-utils.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/texture-utils.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/texture-utils.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/texture-utils.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/texture-utils.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.o: ../source/common/texture/screenshot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/screenshot.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/screenshot.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/screenshot.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/screenshot.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common/texture/screenshot.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/source/common/texture/screenshot.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/source/common/texture/screenshot.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.o: ../vendor/glad/src/gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.o   -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glad/src/gl.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.o   -c /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/src/gl.c
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glad/src/gl.c" > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/src/gl.c > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glad/src/gl.c" -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/src/gl.c -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/glad/src/gl.c.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.o: ../vendor/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_demo.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_demo.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_demo.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_demo.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_demo.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_demo.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_demo.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_draw.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_draw.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_draw.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_draw.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_draw.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_draw.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_draw.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.o: ../vendor/imgui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_widgets.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_widgets.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_widgets.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_widgets.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_widgets.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_widgets.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o: ../vendor/imgui/imgui_impl/imgui_impl_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o: CMakeFiles/SHAPECHOICESHADERS.dir/flags.make
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o: ../vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o -c "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o -c /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp" > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp > CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp" -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp -o CMakeFiles/SHAPECHOICESHADERS.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.s
 
 # Object files for target SHAPECHOICESHADERS
 SHAPECHOICESHADERS_OBJECTS = \
@@ -284,7 +284,7 @@ SHAPECHOICESHADERS: /usr/lib/x86_64-linux-gnu/librt.so
 SHAPECHOICESHADERS: /usr/lib/x86_64-linux-gnu/libm.so
 SHAPECHOICESHADERS: /usr/lib/x86_64-linux-gnu/libX11.so
 SHAPECHOICESHADERS: CMakeFiles/SHAPECHOICESHADERS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable SHAPECHOICESHADERS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable SHAPECHOICESHADERS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SHAPECHOICESHADERS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -297,6 +297,6 @@ CMakeFiles/SHAPECHOICESHADERS.dir/clean:
 .PHONY : CMakeFiles/SHAPECHOICESHADERS.dir/clean
 
 CMakeFiles/SHAPECHOICESHADERS.dir/depend:
-	cd "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug" "/home/ahmad/Desktop/Graphics Project/Graphics-Engine/cmake-build-debug/CMakeFiles/SHAPECHOICESHADERS.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmedezzat/CLionProjects/Graphics-Engine /home/ahmedezzat/CLionProjects/Graphics-Engine /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug /home/ahmedezzat/CLionProjects/Graphics-Engine/cmake-build-debug/CMakeFiles/SHAPECHOICESHADERS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SHAPECHOICESHADERS.dir/depend
 

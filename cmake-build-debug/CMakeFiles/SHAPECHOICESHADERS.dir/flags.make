@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glfw/include" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glad/include" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glm" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/utils" 
+C_INCLUDES = -I/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glfw/include -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/include -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glm -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/utils 
 
 CXX_FLAGS = -g   -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/source/common" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glfw/include" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glad/include" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/glm" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/imgui" -I"/home/ahmad/Desktop/Graphics Project/Graphics-Engine/vendor/utils" 
+CXX_INCLUDES = -I/home/ahmedezzat/CLionProjects/Graphics-Engine/source/common -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glfw/include -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glad/include -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/glm -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/imgui -I/home/ahmedezzat/CLionProjects/Graphics-Engine/vendor/utils 
 

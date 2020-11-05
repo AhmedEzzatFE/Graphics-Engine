@@ -8,6 +8,8 @@ uniform vec2 translation;
 uniform float time;
 uniform bool vibrate;
 uniform int shape;
+uniform vec2 mouse;
+
 // Just a constant
 #define PI 3.1415926535897932384626433832795
 

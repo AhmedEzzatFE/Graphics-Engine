@@ -50,6 +50,11 @@ class UniformsApplication : public our::Application {
         GLuint shape_uniform_location = glGetUniformLocation(program, "shape");
         glUniform1i(shape_uniform_location, shape);
 
+        GLint loc = glGetUniformLocation(program, "iResolution");
+        glUniform2f(loc, 1280, 720);
+        GLuint Mouse_uniform_location = glGetUniformLocation(program, "mouse");
+        glUniform2f(Mouse_uniform_location, mouse.getMousePosition().x,mouse.getMousePosition().y);
+
         GLuint shape2_uniform_location = glGetUniformLocation(program, "shape2");
         glUniform1i(shape2_uniform_location, shape2);
 
@@ -65,6 +70,7 @@ class UniformsApplication : public our::Application {
 
     void onImmediateGui(ImGuiIO &io) override {
         ImGui::Begin("Controls");
+
         if (this->getKeyboard().justReleased(GLFW_KEY_1)){
            shape = 1;
         }
