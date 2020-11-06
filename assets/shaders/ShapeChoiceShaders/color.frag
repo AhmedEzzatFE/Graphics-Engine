@@ -18,6 +18,8 @@ void main() {
     frag_color = vec4(color, 1.0);
     // If flickering, multiply it with a sinusoidal wave that oscillates over time
     vec2 uv= (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.y;//(mouse/255)*
+    uv.x -= (mouse.x/iResolution.x-0.6f);
+    uv.y += (mouse.y/iResolution.y-0.4f);
     vec3 col= vec3(0);
     uv.x *=.7;
     uv.y -=sqrt(abs(uv.x))*.6;
