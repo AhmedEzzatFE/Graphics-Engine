@@ -7,7 +7,6 @@ uniform vec2 scale;
 uniform vec2 translation;
 uniform float time;
 uniform bool vibrate;
-uniform int shape;
 uniform vec2 mouse;
 
 // Just a constant
@@ -29,8 +28,7 @@ void main() {
     // Scale it
     position.xy *= scale;
     // If vibrate is on, scale it with a sinusoidal wave that oscillates over time
-    if(shape == 1)
-        position.xy *= 1 + 0.1 * sin(2 * PI * time);
+
     // Translate it
     position.xy += translation;
 

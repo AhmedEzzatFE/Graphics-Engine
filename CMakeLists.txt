@@ -48,3 +48,4 @@ include_directories(
 add_executable(SHAPECHOICESHADERS source/examples/ShapeChoice.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
 target_link_libraries(SHAPECHOICESHADERS glfw)
 
+set(randomvariable ${34}) #this is for reloading the cmake file
