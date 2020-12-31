@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)   # Selects the minimum version of CMake required to run this file
-project(Graphics_Engine)
+project(PH1 VERSION 0.1.0)          # Here we select the project name and version
+
 # Here we select C++17 with all the standards required and all compiler-specific extensions disabled
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -30,21 +31,28 @@ set(VENDOR_SOURCES ${GLAD_SOURCE} ${IMGUI_SOURCES})
 
 # A variable with all our source files that are common between executable targets (examples)
 set(COMMON_SOURCES
-        source/common/application.cpp
-        source/common/shader.cpp
-        source/common/mesh/mesh-utils.cpp
-        source/common/texture/texture-utils.cpp
-        source/common/texture/screenshot.cpp)
+        common/application.cpp
+        common/shader.cpp
+        common/mesh/mesh-utils.cpp
+        common/texture/texture-utils.cpp
+        common/texture/screenshot.cpp
+        ECS/GameState/GameState.cpp
+        ECS/Component/Component.cpp
+        ECS/Component/TransformComponent.cpp
+        ECS/Component/CameraComponent.cpp
+        ECS/Component/MeshRenderer.cpp
+        ECS/Component/RenderState.cpp
+        ECS/Entity/Entity.cpp common/texture/Texture2D.cpp common/texture/Texture2D.h common/texture/Sampler.cpp common/texture/Sampler.h ECS/Component/Material.cpp ECS/Component/Material.h ECS/Component/Light.cpp ECS/Component/Light.h)
 
 # Define the directories in which to search for the included headers
 include_directories(
-        source/common
+        common
         vendor/glfw/include
         vendor/glad/include
         vendor/glm
         vendor/imgui
         vendor/utils
+        ECS
 )
-add_executable(EX03_UNIFORMS source/examples/ex03_uniforms.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
-target_link_libraries(EX03_UNIFORMS glfw)
-
+add_executable(PH1 main.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
+target_link_libraries(PH1 glfw)
