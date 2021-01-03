@@ -73,7 +73,7 @@ void attachShader(GLuint program, const char *filename, GLenum shader_type)
     //                          then the function will deduce the lengths automatically by searching for '\0'.
     glShaderSource(shader, 1, &source_code_as_c_str, nullptr);
     glCompileShader(shader);
-    
+
 
     // 3. Check for any Compilation errors.
     checkShaderCompilationErrors(shader);
@@ -143,16 +143,18 @@ class PlayState : public GameState
     Entity *CameraEntity = new Entity(NULL);
     int y=1;
     int x=1;
+    CameraComponent *cameraComponent = new CameraComponent();
+    CameraControllerComponent *cameraController = new CameraControllerComponent();
+    MeshRendererComponent *meshObj = new MeshRendererComponent();
+
     //////////////////////// Texture 2d and Sampler///////////////////////
     Texture2D* TextureObject = new Texture2D();
     Sampler* SampleObject = new Sampler();
     // removed tranform component
-    CameraComponent *cameraComponent = new CameraComponent();
-    CameraControllerComponent *cameraController = new CameraControllerComponent();
-   // here determine the objects
+
+    // here determine the objects
     TransformComponent *transObj = new TransformComponent(Quad);
     TransformComponent *transObj2 = new TransformComponent(Sphere);
-    MeshRendererComponent *meshObj = new MeshRendererComponent();
     MeshRendererComponent *meshObj2 = new MeshRendererComponent();
     RenderState * renderStateObj = new RenderState();
     RenderState * renderStateObj2 = new RenderState();
@@ -173,7 +175,7 @@ class PlayState : public GameState
 
     void onEnter() override
     {
-        
+
         light.diffuse = {1,1,1};
         light.specular = {1,1,1};
         light.ambient = {0.1f, 0.1f, 0.1f};
@@ -186,62 +188,65 @@ class PlayState : public GameState
         TextureObject->ActivateTexture("assets/images/common/monarch.png",true);
         SampleObject->InitializeSampler();
 
+        //Camera Operations
         int width, height;
         glfwGetFramebufferSize(app->window, &width, &height);
-
-        CameraEntity->addComponent(cameraComponent, "camera");
-        CameraEntity->addComponent(cameraController, "controller");
-
-        // changed some coordinates
-        transObj->init(app,{0, 0, 0}, {0, 0, 0}, {5, 5, 5});
-        transObj2->init(app,{7, 10, -7}, {0, 0, 0}, {5, 5, 5});
-
-        Quad->addComponent(transObj, "transform");
-        Sphere->addComponent(transObj2, "transform");
-
-        cameraMatrix = cameraComponent->getcameraMatrix();
-        Quad->addComponent(meshObj, "mesh");
-        Sphere->addComponent(meshObj2, "mesh");
-        renderStateObj2->setDepthTesting(false,GL_LEQUAL);
-        renderStateObj2->setCulling(true,GL_BACK,GL_CCW);
-        renderStateObj2->setBlending(false);
-        Sphere->addComponent(renderStateObj2,"renderState");
-        renderStateObj->setDepthTesting(false,GL_LEQUAL);
-        renderStateObj->setCulling(false,GL_BACK,GL_CCW);
-        renderStateObj->setBlending(false);
-        Quad->addComponent(renderStateObj,"renderState");
 
         shader.create();
         shader.attach("assets/shaders/light/light_transform.vert", GL_VERTEX_SHADER);
         shader.attach("assets/shaders/light/directional_light.frag", GL_FRAGMENT_SHADER);
         shader.link();
-// remember to change false
-        our::mesh_utils::Cuboid(model, false);
-        our::mesh_utils::Sphere(model2, {32, 16}, false);
         glUseProgram(shader);
-
         ptrShader = &shader;
-        ptrModel = &model;
-        ptrModel2 = &model2;
-        MaterialObj->init(ptrShader);
-        MaterialObj->tint = {1,1,1,1};
-        meshObj->init(MaterialObj, ptrModel);
-        meshObj2->init(MaterialObj, ptrModel2);
+//        ptrModel = &model;
 
-
-        ///also changed coordinates here
+        CameraEntity->addComponent(cameraComponent, "camera");
+        CameraEntity->addComponent(cameraController, "controller");
+        cameraMatrix = cameraComponent->getcameraMatrix();
         cameraComponent->setEyePosition({0, 0, 40});
         cameraComponent->setTarget({0, 0, 0});
         cameraComponent->setUp({0, 1, 0});
         cameraComponent->setupPerspective(glm::pi<float>()/2, static_cast<float>(width)/height, 0.1f, 100.0f);
-
         cameraController->initialize(app, cameraComponent);
-
         glClearColor(0, 0, 0, 0);
-    
         Entities.push_back(CameraEntity);
-        Entities.push_back(Sphere);
+
+        // changed some coordinates
+        our::mesh_utils::Cuboid(model, false);
+        transObj->init(app,{0, 0, 0}, {0, 0, 0}, {5, 5, 5});
+        meshObj->init(MaterialObj, &model);
+
+        renderStateObj->setDepthTesting(false,GL_LEQUAL);
+        renderStateObj->setCulling(false,GL_BACK,GL_CCW);
+        renderStateObj->setBlending(false);
+
+        Quad->addComponent(renderStateObj,"renderState");
+        Quad->addComponent(meshObj, "mesh");
+        Quad->addComponent(transObj, "transform");
         Entities.push_back(Quad);
+
+
+
+        our::mesh_utils::Sphere(model2, {32, 16}, false);
+        ptrModel2 = &model2;
+        MaterialObj->init(ptrShader);
+        MaterialObj->tint = {1,1,1,1};
+
+        transObj2->init(app,{7, 10, -7}, {0, 0, 0}, {5, 5, 5});
+        meshObj2->init(MaterialObj, ptrModel2);
+
+        renderStateObj2->setDepthTesting(false,GL_LEQUAL);
+        renderStateObj2->setCulling(true,GL_BACK,GL_CCW);
+        renderStateObj2->setBlending(false);
+
+        Sphere->addComponent(renderStateObj2,"renderState");
+        Sphere->addComponent(transObj2, "transform");
+        Sphere->addComponent(meshObj2, "mesh");
+        Entities.push_back(Sphere);
+
+
+        ///also changed coordinates here
+
     }
 
     void onDraw(double deltaTime) override
@@ -306,39 +311,39 @@ class PlayState : public GameState
 
                 ((MeshRendererComponent *)Entities[i]->getComponent("mesh"))->draw(transformationMatrix, cameraMatrix);
             }
-            
-           
+
+
         }
         for (unsigned int i = 0; i < bullets.size(); i++)
         {
             TransformComponent* transComponent =(TransformComponent *) bullets[i]->getComponent ("transform");
-             transComponent->fall(deltaTime,4);
+            transComponent->fall(deltaTime,4);
         }
-        
+
 
         if (app->getKeyboard().justPressed(GLFW_KEY_SPACE))
         {
-            
+
             if (x+2<Entities.size())
             {
                 x++;
 
-            } 
+            }
             else
             {
-            
+
                 x=0;
             }
-            
-        
+
+
         }
-        
+
         if (app->getKeyboard().justPressed(GLFW_KEY_1))
         {
             createBullet();
         }
-         TransformComponent* transComponent = ((TransformComponent *)Entities[x+y]->getComponent("transform"));
-         transComponent->update(deltaTime);
+        TransformComponent* transComponent = ((TransformComponent *)Entities[x+y]->getComponent("transform"));
+        transComponent->update(deltaTime);
 
     }
     void onExit() override
@@ -360,7 +365,7 @@ class PlayState : public GameState
         bullet->addComponent(meshObj2, "mesh");
         Entities.push_back(bullet);
         bullets.push_back(bullet);
-        
+
     }
 
 };
@@ -383,7 +388,7 @@ public:
     void onEnter() override
     {
         program = glCreateProgram(); // We ask GL to create a program for us and return a uint that we will use it by.
-                                     // (act as a pointer to the created program).
+        // (act as a pointer to the created program).
 
         attachShader(program, "assets/shaders/PH1.vert", GL_VERTEX_SHADER);   // read the vertex shader and attach it to the program.
         attachShader(program, "assets/shaders/PH1.frag", GL_FRAGMENT_SHADER); // read the fragment shader and attach it to the program.
@@ -400,10 +405,10 @@ public:
 
         glClear(GL_COLOR_BUFFER_BIT);    // Clear the frame buffer (back buffer of the window)
         glUseProgram(program);           // Ask GL to use this program for the upcoming operations.
-                                         // Every shader and rendering call after glUseProgram will now use this program object (and the shaders).
+        // Every shader and rendering call after glUseProgram will now use this program object (and the shaders).
         glBindVertexArray(vertex_array); // Binding is like selecting which object to use.
-                                         // Note that we need to bind a vertex array to draw
-                                         // Even if that vertex array does not send any data down the pipeline
+        // Note that we need to bind a vertex array to draw
+        // Even if that vertex array does not send any data down the pipeline
 
         if (app->getKeyboard().justPressed(GLFW_KEY_1))
             keyboard = 1;
