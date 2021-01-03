@@ -52,11 +52,11 @@ class CameraControllerComponent: public Component {
                 mouse_locked = false;
             }
 
-//            if(app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1)){
+
                 glm::vec2 delta = app->getMouse().getMouseDelta();
                 pitch -= delta.y * pitch_sensitivity;
                 yaw -= delta.x * yaw_sensitivity;
-//            }
+
 
             if(pitch < -glm::half_pi<float>() * 0.99f) pitch = -glm::half_pi<float>() * 0.99f;
             if(pitch >  glm::half_pi<float>() * 0.99f) pitch  = glm::half_pi<float>() * 0.99f;
