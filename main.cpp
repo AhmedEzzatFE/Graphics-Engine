@@ -124,43 +124,32 @@ our::Application *app = new ShaderIntroductionApplication();
 
 class PlayState : public GameState
 {
-
     our::ShaderProgram shader;
     our::ShaderProgram *ptrShader;
-    our::Mesh *ptrModel;
-    our::Mesh *ptrModel2;
-    our::Mesh *ptrModel3;
     our::Mesh model;
     our::Mesh model2;
     our::Mesh model3;
     std::vector<Entity *> Entities;
+    std::vector<TransformComponent *> transforms;
+    std::vector<RenderState *> renderStates;
+    std::vector<MeshRendererComponent *> meshRenderers;
     std::vector<Entity *> bullets;
     int level_of_detail = 0;
     float zoom = 1;
     glm::mat4 cameraMatrix;
-    Entity *Quad = new Entity(NULL);
-    Entity *Sphere = new Entity(NULL);
     Entity *CameraEntity = new Entity(NULL);
     int y=1;
     int x=1;
     CameraComponent *cameraComponent = new CameraComponent();
     CameraControllerComponent *cameraController = new CameraControllerComponent();
-    MeshRendererComponent *meshObj = new MeshRendererComponent();
 
     //////////////////////// Texture 2d and Sampler///////////////////////
     Texture2D* TextureObject = new Texture2D();
     Sampler* SampleObject = new Sampler();
-    // removed tranform component
-
-    // here determine the objects
-    TransformComponent *transObj = new TransformComponent(Quad);
-    TransformComponent *transObj2 = new TransformComponent(Sphere);
     MeshRendererComponent *meshObj2 = new MeshRendererComponent();
-    RenderState * renderStateObj = new RenderState();
-    RenderState * renderStateObj2 = new RenderState();
     glm::mat4 transformationMatrix;
     glm::mat4 transformationMatrix2;
-    LightComponent light;
+    LightComponent light = LightComponent();
     ////////Adding Material
     Material * MaterialObj= new Material();
 
@@ -176,13 +165,7 @@ class PlayState : public GameState
     void onEnter() override
     {
 
-        light.diffuse = {1,1,1};
-        light.specular = {1,1,1};
-        light.ambient = {0.1f, 0.1f, 0.1f};
-        light.direction = {-1, -1, -1};
-        light.position = {0, 1, 2};
-        light.attenuation = {0, 0, 1};
-        light.spot_angle = {glm::pi<float>()/4, glm::pi<float>()/2};
+
 
         //here change the texture
         TextureObject->ActivateTexture("assets/images/common/monarch.png",true);
@@ -198,7 +181,6 @@ class PlayState : public GameState
         shader.link();
         glUseProgram(shader);
         ptrShader = &shader;
-//        ptrModel = &model;
 
         CameraEntity->addComponent(cameraComponent, "camera");
         CameraEntity->addComponent(cameraController, "controller");
@@ -208,44 +190,22 @@ class PlayState : public GameState
         cameraComponent->setUp({0, 1, 0});
         cameraComponent->setupPerspective(glm::pi<float>()/2, static_cast<float>(width)/height, 0.1f, 100.0f);
         cameraController->initialize(app, cameraComponent);
-        glClearColor(0, 0, 0, 0);
         Entities.push_back(CameraEntity);
-
-        // changed some coordinates
-        our::mesh_utils::Cuboid(model, false);
-        transObj->init(app,{0, 0, 0}, {0, 0, 0}, {5, 5, 5});
-        meshObj->init(MaterialObj, &model);
-
-        renderStateObj->setDepthTesting(false,GL_LEQUAL);
-        renderStateObj->setCulling(false,GL_BACK,GL_CCW);
-        renderStateObj->setBlending(false);
-
-        Quad->addComponent(renderStateObj,"renderState");
-        Quad->addComponent(meshObj, "mesh");
-        Quad->addComponent(transObj, "transform");
-        Entities.push_back(Quad);
-
-
-
-        our::mesh_utils::Sphere(model2, {32, 16}, false);
-        ptrModel2 = &model2;
         MaterialObj->init(ptrShader);
         MaterialObj->tint = {1,1,1,1};
 
-        transObj2->init(app,{7, 10, -7}, {0, 0, 0}, {5, 5, 5});
-        meshObj2->init(MaterialObj, ptrModel2);
+        our::mesh_utils::Cuboid(model, false);
+        createObject({0, 0, 0}, {0, 0, 0}, {5, 5, 5}, model);
 
-        renderStateObj2->setDepthTesting(false,GL_LEQUAL);
-        renderStateObj2->setCulling(true,GL_BACK,GL_CCW);
-        renderStateObj2->setBlending(false);
 
-        Sphere->addComponent(renderStateObj2,"renderState");
-        Sphere->addComponent(transObj2, "transform");
-        Sphere->addComponent(meshObj2, "mesh");
-        Entities.push_back(Sphere);
+        our::mesh_utils::Sphere(model2, {32, 16}, false);
+        createObject({7, 10, -7}, {0, 0, 0}, {5, 5, 5}, model2);
+
+
 
 
         ///also changed coordinates here
+        glClearColor(0, 0, 0, 0);
 
     }
 
@@ -312,7 +272,6 @@ class PlayState : public GameState
                 ((MeshRendererComponent *)Entities[i]->getComponent("mesh"))->draw(transformationMatrix, cameraMatrix);
             }
 
-
         }
         for (unsigned int i = 0; i < bullets.size(); i++)
         {
@@ -320,28 +279,6 @@ class PlayState : public GameState
             transComponent->fall(deltaTime,4);
         }
 
-
-        if (app->getKeyboard().justPressed(GLFW_KEY_SPACE))
-        {
-
-            if (x+2<Entities.size())
-            {
-                x++;
-
-            }
-            else
-            {
-
-                x=0;
-            }
-
-
-        }
-
-        if (app->getKeyboard().justPressed(GLFW_KEY_1))
-        {
-            createBullet();
-        }
         TransformComponent* transComponent = ((TransformComponent *)Entities[x+y]->getComponent("transform"));
         transComponent->update(deltaTime);
 
@@ -352,20 +289,25 @@ class PlayState : public GameState
         model.destroy();
         cameraController->release();
     }
-    void createBullet()
-    {
-        our::Mesh *ptr;
-//added here bullet
-        Entity*bullet= new Entity(nullptr);
-        TransformComponent *transObj = new TransformComponent(bullet);
-        MeshRendererComponent *meshObj = new MeshRendererComponent();
-        meshObj->init(MaterialObj, ptr);
-        transObj->init(app,{0, -4, 0}, {0, 0, 0}, {1, 0.5, 1});
-        bullet->addComponent(transObj, "transform");
-        bullet->addComponent(meshObj2, "mesh");
-        Entities.push_back(bullet);
-        bullets.push_back(bullet);
 
+    void createObject(glm::vec3 pos, glm::vec3 rot, glm::vec3 sc, our::Mesh &mesh)
+    {
+        Entity* ent = new Entity(nullptr);
+        TransformComponent * ts = new TransformComponent(ent);
+        ts->init(app, pos, rot, sc);
+        MeshRendererComponent* mrc = new MeshRendererComponent();
+        mrc->init(MaterialObj, &mesh);
+        RenderState* rs = new RenderState();
+        renderStates.push_back(rs);
+        meshRenderers.push_back(mrc);
+        transforms.push_back(ts);
+        rs->setDepthTesting(false,GL_LEQUAL);
+        rs->setCulling(true,GL_BACK,GL_CCW);
+        rs->setBlending(false);
+        ent->addComponent(rs,"renderState");
+        ent->addComponent(mrc, "mesh");
+        ent->addComponent(ts, "transform");
+        Entities.push_back(ent);
     }
 
 };
@@ -410,10 +352,11 @@ public:
         // Note that we need to bind a vertex array to draw
         // Even if that vertex array does not send any data down the pipeline
 
-        if (app->getKeyboard().justPressed(GLFW_KEY_1))
-            keyboard = 1;
-        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
-            keyboard = 2;
+        //Following Code is for phase 1
+//        if (app->getKeyboard().justPressed(GLFW_KEY_1))
+//            keyboard = 1;
+//        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
+//            keyboard = 2;
 
         GLuint keyboard_uniform_location = glGetUniformLocation(program, "keyboard");
         glUniform1i(keyboard_uniform_location, keyboard);
