@@ -2894,13 +2894,13 @@ CMakeFiles/PH1.dir/main.cpp.o
  ../ECS/Component/CameraComponent.h
  ../ECS/Component/CameraControllerComponent.h
  ../ECS/Component/Component.h
+ ../ECS/Component/LightComponent.h
  ../ECS/Component/Material.h
  ../ECS/Component/MeshRenderer.h
  ../ECS/Component/RenderState.h
  ../ECS/Component/TransformComponent.h
  ../ECS/Entity/Entity.h
  ../ECS/GameState/GameState.h
- ../ECS/light/light.h
  ../common/application.hpp
  ../common/data-types.h
  ../common/imgui-utils/utils.hpp

@@ -2893,13 +2893,13 @@ CMakeFiles/PH1.dir/common/texture/texture-utils.cpp.o: ../common/texture/texture
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/CameraComponent.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/CameraControllerComponent.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/Component.h
+CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/LightComponent.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/Material.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/MeshRenderer.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/RenderState.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Component/TransformComponent.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/Entity/Entity.h
 CMakeFiles/PH1.dir/main.cpp.o: ../ECS/GameState/GameState.h
-CMakeFiles/PH1.dir/main.cpp.o: ../ECS/light/light.h
 CMakeFiles/PH1.dir/main.cpp.o: ../common/application.hpp
 CMakeFiles/PH1.dir/main.cpp.o: ../common/data-types.h
 CMakeFiles/PH1.dir/main.cpp.o: ../common/imgui-utils/utils.hpp

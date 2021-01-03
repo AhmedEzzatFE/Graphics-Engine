@@ -40,6 +40,8 @@ application.hpp
 glm/glm.hpp
 -
 
+../ECS/Component/LightComponent.h
+
 ../ECS/Component/Material.h
 shader.hpp
 -
@@ -117,8 +119,6 @@ glm/glm.hpp
 -
 GLFW/glfw3.h
 -
-
-../ECS/light/light.h
 
 ../common/application.hpp
 glm/vec2.hpp
@@ -2295,6 +2295,6 @@ texture/Texture2D.h
 -
 texture/Sampler.h
 -
-../ECS/light/light.h
-/home/ahmad/Desktop/5raphics/ECS/light/light.h
+Component/LightComponent.h
+/home/ahmad/Desktop/5raphics/Graphics-Engine/Component/LightComponent.h
 

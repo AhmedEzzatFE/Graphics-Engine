@@ -27,7 +27,7 @@
 #include <texture/Texture2D.h>
 #include <texture/Sampler.h>
 
-#include "../ECS/light/light.h"
+#include "Component/LightComponent.h"
 #pragma region helper_functions
 
 std::string read_file(const char *filename)
@@ -133,13 +133,10 @@ class PlayState : public GameState
     std::vector<TransformComponent *> transforms;
     std::vector<RenderState *> renderStates;
     std::vector<MeshRendererComponent *> meshRenderers;
-    std::vector<Entity *> bullets;
     int level_of_detail = 0;
     float zoom = 1;
     glm::mat4 cameraMatrix;
     Entity *CameraEntity = new Entity(NULL);
-    int y=1;
-    int x=1;
     CameraComponent *cameraComponent = new CameraComponent();
     CameraControllerComponent *cameraController = new CameraControllerComponent();
 
@@ -171,7 +168,6 @@ class PlayState : public GameState
         TextureObject->ActivateTexture("assets/images/common/monarch.png",true);
         SampleObject->InitializeSampler();
 
-        //Camera Operations
         int width, height;
         glfwGetFramebufferSize(app->window, &width, &height);
 
@@ -182,6 +178,7 @@ class PlayState : public GameState
         glUseProgram(shader);
         ptrShader = &shader;
 
+        //Camera Operations
         CameraEntity->addComponent(cameraComponent, "camera");
         CameraEntity->addComponent(cameraController, "controller");
         cameraMatrix = cameraComponent->getcameraMatrix();
@@ -191,6 +188,8 @@ class PlayState : public GameState
         cameraComponent->setupPerspective(glm::pi<float>()/2, static_cast<float>(width)/height, 0.1f, 100.0f);
         cameraController->initialize(app, cameraComponent);
         Entities.push_back(CameraEntity);
+
+        //Initializing Material
         MaterialObj->init(ptrShader);
         MaterialObj->tint = {1,1,1,1};
 
@@ -203,8 +202,6 @@ class PlayState : public GameState
 
 
 
-
-        ///also changed coordinates here
         glClearColor(0, 0, 0, 0);
 
     }
@@ -273,14 +270,8 @@ class PlayState : public GameState
             }
 
         }
-        for (unsigned int i = 0; i < bullets.size(); i++)
-        {
-            TransformComponent* transComponent =(TransformComponent *) bullets[i]->getComponent ("transform");
-            transComponent->fall(deltaTime,4);
-        }
 
-        TransformComponent* transComponent = ((TransformComponent *)Entities[x+y]->getComponent("transform"));
-        transComponent->update(deltaTime);
+
 
     }
     void onExit() override

@@ -154,9 +154,6 @@
 		<Unit filename="/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/CameraComponent.h">
 			<Option target="PH1"/>
 		</Unit>
-		<Unit filename="/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/LightComponent.h">
-			<Option target="PH1"/>
-		</Unit>
 		<Unit filename="/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/Material.cpp">
 			<Option target="PH1"/>
 		</Unit>
