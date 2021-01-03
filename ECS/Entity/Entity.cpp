@@ -36,22 +36,15 @@ Entity:: Entity( Entity * p)
 int Entity:: entityCount = 0;
 void Entity:: update()
 {
-/*for (auto& it: components) {
-    // Do stuff
-     it.second->update();
-}*/
+
 }
 int Entity::getId() {
     return this->id;
 }
-
 void Entity::setId(int id) {
     this->id =id;
 }
-
-
 Entity::~Entity() {
-
     auto iterator = this->components.begin();
     for(; iterator != this->components.end(); ++iterator) {
         delete iterator->second;

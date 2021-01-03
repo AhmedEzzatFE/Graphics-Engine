@@ -2238,24 +2238,6 @@ utility
 vector
 -
 
-/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/common/texture/Sampler.cpp
-Sampler.h
-/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/common/texture/Sampler.h
-
-/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/common/texture/Sampler.h
-application.hpp
--
-shader.hpp
--
-imgui-utils/utils.hpp
--
-GL/gl.h
--
-texture/texture-utils.h
--
-unordered_map
--
-
 /home/ahmedezzat/Desktop/Graphics/Graphics-Engine/main.cpp
 application.hpp
 -

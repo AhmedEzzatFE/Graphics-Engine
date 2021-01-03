@@ -33,16 +33,6 @@ class CameraComponent : public Component{
         glm::mat4 V{}, P{}, VP{};
 
     public:
-        /*Camera( glm::vec3 x, glm::vec3 y, glm::vec3 z){
-            dirtyFlags = V_DIRTY | P_DIRTY | VP_DIRTY;
-            eye = x;
-            direction= y;
-            up=z;
-        }*/
-//        Camera(){
-//            dirtyFlags = V_DIRTY | P_DIRTY | VP_DIRTY;
-//            up = {0, 1, 0};
-//        }
 
         // Setup the camera as a perspective camera
         void setupPerspective(float field_of_view_y, float aspect_ratio, float near, float far){

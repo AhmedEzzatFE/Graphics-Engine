@@ -129,10 +129,10 @@ class PlayState : public GameState
     our::ShaderProgram *ptrShader;
     our::Mesh *ptrModel;
     our::Mesh *ptrModel2;
+    our::Mesh *ptrModel3;
     our::Mesh model;
     our::Mesh model2;
-   
-
+    our::Mesh model3;
     std::vector<Entity *> Entities;
     std::vector<Entity *> bullets;
     int level_of_detail = 0;
@@ -143,7 +143,7 @@ class PlayState : public GameState
     Entity *CameraEntity = new Entity(NULL);
     int y=1;
     int x=1;
-    //////////////////////// Texture 2d and Sampler
+    //////////////////////// Texture 2d and Sampler///////////////////////
     Texture2D* TextureObject = new Texture2D();
     Sampler* SampleObject = new Sampler();
     // removed tranform component
@@ -182,6 +182,7 @@ class PlayState : public GameState
         light.attenuation = {0, 0, 1};
         light.spot_angle = {glm::pi<float>()/4, glm::pi<float>()/2};
 
+        //here change the texture
         TextureObject->ActivateTexture("assets/images/common/monarch.png",true);
         SampleObject->InitializeSampler();
 
