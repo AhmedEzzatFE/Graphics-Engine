@@ -161,9 +161,6 @@ class PlayState : public GameState
 
     void onEnter() override
     {
-
-
-
         //here change the texture
         TextureObject->ActivateTexture("assets/images/common/monarch.png",true);
         SampleObject->InitializeSampler();

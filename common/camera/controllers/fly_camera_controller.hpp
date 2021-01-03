@@ -1,3 +1,4 @@
+//Copy Pasted from Examples
 #ifndef OUR_FLY_CAMERA_CONTROLLER_HPP
 #define OUR_FLY_CAMERA_CONTROLLER_HPP
 

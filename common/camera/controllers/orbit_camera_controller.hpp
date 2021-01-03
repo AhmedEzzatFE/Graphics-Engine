@@ -1,3 +1,6 @@
+//Copy Pasted from examples
+
+
 #ifndef OUR_ORBIT_CAMERA_CONTROLLER_HPP
 #define OUR_ORBIT_CAMERA_CONTROLLER_HPP
 

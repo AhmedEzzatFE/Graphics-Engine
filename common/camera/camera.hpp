@@ -1,3 +1,4 @@
+//from examples
 #ifndef OUR_CAMERA_HPP
 #define OUR_CAMERA_HPP
 
