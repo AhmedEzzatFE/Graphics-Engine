@@ -2,6 +2,14 @@
 
 #include "light_common.glsl"
 
+in vec4 vertex_color;
+uniform sampler2D sampler;
+uniform int lod;
+uniform float zoom;
+
+
+uniform vec4 tint; // A tint is something we can use to modify colors
+
 in Varyings {
     vec4 color;
     vec2 tex_coord;
@@ -31,5 +39,9 @@ void main() {
     vec3 specular = material.specular * light.specular * calculate_phong(normal, light.direction, view, material.shininess);
     vec3 ambient = material.ambient * light.ambient;
 
-    frag_color = fsin.color * vec4(diffuse + specular + ambient, 1.0f);
+
+
+
+    frag_color = tint * texture(sampler, fsin.tex_coord);
+    frag_color = frag_color*fsin.color * vec4(diffuse + specular + ambient, 1.0f);
 }

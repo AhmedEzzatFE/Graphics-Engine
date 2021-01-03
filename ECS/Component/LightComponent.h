@@ -12,7 +12,7 @@ enum class LightType {
     SPOT
 };
 
-class Light {
+class LightComponent {
 
         LightType type;
         glm::vec3 diffuse, specular, ambient;

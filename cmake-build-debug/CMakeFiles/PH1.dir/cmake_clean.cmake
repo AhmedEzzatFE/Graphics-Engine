@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PH1.dir/ECS/Component/CameraComponent.cpp.o"
-  "CMakeFiles/PH1.dir/ECS/Component/Component.cpp.o"
-  "CMakeFiles/PH1.dir/ECS/Component/Light.cpp.o"
   "CMakeFiles/PH1.dir/ECS/Component/Material.cpp.o"
   "CMakeFiles/PH1.dir/ECS/Component/MeshRenderer.cpp.o"
   "CMakeFiles/PH1.dir/ECS/Component/RenderState.cpp.o"

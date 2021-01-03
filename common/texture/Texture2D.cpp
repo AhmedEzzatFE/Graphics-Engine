@@ -3,24 +3,42 @@
 //
 
 #include "Texture2D.h"
-
-
-Texture2D::Texture2D(int option){
-    glGenTextures(1, &texture);
-    uint8_t pixel_data[] = {
-            255,   0,   0, 255,
-            0, 255,   0, 255,
-            0,   0, 255, 255,
-            255, 255,   0, 255,
-    };
-    glBindTexture(GL_TEXTURE_2D, texture);
-    glPixelStorei(GL_UNPACK_ALIGNMENT, 4);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, 2, 2, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixel_data);
-    glGenerateMipmap(GL_TEXTURE_2D);
-}
-
- Texture2D::~Texture2D()
+Texture2D::Texture2D()
 {
-    glDeleteTextures(1, &texture);
+    texture=0;
 }
 
+Texture2D::Texture2D(const char* file){
+    glGenTextures(1, &this->texture);
+    our::texture_utils::loadImage(this->texture, file);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, this->texture);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+}
+void Texture2D::ActivateTexture(const char * filename, bool generate_mipmap) {
+
+            if (this->texture)
+        {
+            glDeleteTextures(1, &this->texture);
+        }
+        //Generate the Texture and bind them
+        glGenTextures(1, &this->texture);
+        glBindTexture(GL_TEXTURE_2D, this->texture);
+        //load new Texture
+        our::texture_utils::loadImage(this->texture, filename);
+        //Activate and bind the new texture
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, this->texture);
+        // for enabling the texture
+        glEnable(GL_TEXTURE_2D);
+
+}
+void Texture2D::LinkTexture() {
+
+    glActiveTexture(GL_TEXTURE0 );
+    glBindTexture(GL_TEXTURE_2D, this->texture);
+}

@@ -37,12 +37,11 @@ set(COMMON_SOURCES
         common/texture/texture-utils.cpp
         common/texture/screenshot.cpp
         ECS/GameState/GameState.cpp
-        ECS/Component/Component.cpp
         ECS/Component/TransformComponent.cpp
         ECS/Component/CameraComponent.cpp
         ECS/Component/MeshRenderer.cpp
         ECS/Component/RenderState.cpp
-        ECS/Entity/Entity.cpp common/texture/Texture2D.cpp common/texture/Texture2D.h common/texture/Sampler.cpp common/texture/Sampler.h ECS/Component/Material.cpp ECS/Component/Material.h ECS/Component/Light.cpp ECS/Component/Light.h)
+        ECS/Entity/Entity.cpp common/texture/Texture2D.cpp common/texture/Texture2D.h common/texture/Sampler.cpp common/texture/Sampler.h ECS/Component/Material.cpp ECS/Component/Material.h ECS/Component/LightComponent.h)
 
 # Define the directories in which to search for the included headers
 include_directories(

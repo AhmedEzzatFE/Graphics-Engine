@@ -13,13 +13,19 @@
 #include <unordered_map>
 
 class Texture2D {
-    GLuint texture;
+
+
+    GLuint texture=0;
 
 
 public:
-    Texture2D(int option);
+    Texture2D();
+    Texture2D(const char * file);
     void onDestroy();
-    ~Texture2D();
+    void ActivateTexture(const char * filename, bool generate_mipmap);
+    void LinkTexture();
+    Texture2D (const Texture2D&) = delete;
+    Texture2D& operator= (const Texture2D&) = delete;
 };
 
 

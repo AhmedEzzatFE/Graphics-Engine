@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/common -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/glfw/include -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/glad/include -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/glm -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/imgui -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/utils -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/ECS 
+C_INCLUDES = -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/common -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/glfw/include -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/glad/include -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/glm -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/imgui -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/utils -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/ECS 
 
 CXX_FLAGS = -g   -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/common -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/glfw/include -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/glad/include -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/glm -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/imgui -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/vendor/utils -I/home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/ECS 
+CXX_INCLUDES = -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/common -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/glfw/include -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/glad/include -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/glm -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/imgui -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/vendor/utils -I/home/ahmedezzat/Desktop/Graphics/Graphics-Engine/ECS 
 

@@ -1,27 +1,20 @@
-//
-// Created by ahmad on 31/12/2020.
-//
-
-#ifndef PH1_MATERIAL_H
-#define PH1_MATERIAL_H
-
-
-#include <application.hpp>
+#pragma once
+#ifndef MATERIAL_H
+#define MATERIAL_H
 #include <shader.hpp>
+#include <utility>
 #include <imgui-utils/utils.hpp>
-#include <texture/texture-utils.h>
-#include <unordered_map>
 #include <string>
-#include <any>
-
-#define _map std::unordered_map<std::string, std::vector<std::any>>
-
-class Material {
+class Material{
 public:
-    GLuint* shader;
-    _map uniformMap;
-    Material(GLuint* shader, std::unordered_map<std::string, std::vector<std::any>>);
+    our::ShaderProgram * MatrixShader;
+    glm::vec4 tint;
+    glm::vec3 specular_tint, emissive_tint;
+    glm::vec3 diffuse, specular, ambient;
+    float shininess;
+    void init(our::ShaderProgram* ShaderPointer);
+    void Initialize();
+    void TransformShader(glm::mat4 transformationMatrix,glm::mat4 cameraMatrix);
 };
 
-
-#endif //PH1_MATERIAL_H
+#endif

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/138/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/138/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project
+CMAKE_SOURCE_DIR = /home/ahmedezzat/Desktop/Graphics/Graphics-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ahmedezzat/Desktop/Graphics/Graphics-Engine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/c
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/137/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/138/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/137/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/138/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/cmake-build-debug/CMakeFiles /home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/Desktop/Graphics/Graphics-Engine/cmake-build-debug/CMakeFiles /home/ahmedezzat/Desktop/Graphics/Graphics-Engine/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/UpdatedGraphicsProject/Graphics-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/Desktop/Graphics/Graphics-Engine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -182,60 +182,6 @@ ECS/Component/CameraComponent.s: ECS/Component/CameraComponent.cpp.s
 ECS/Component/CameraComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/CameraComponent.cpp.s
 .PHONY : ECS/Component/CameraComponent.cpp.s
-
-ECS/Component/Component.o: ECS/Component/Component.cpp.o
-
-.PHONY : ECS/Component/Component.o
-
-# target to build an object file
-ECS/Component/Component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/Component.cpp.o
-.PHONY : ECS/Component/Component.cpp.o
-
-ECS/Component/Component.i: ECS/Component/Component.cpp.i
-
-.PHONY : ECS/Component/Component.i
-
-# target to preprocess a source file
-ECS/Component/Component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/Component.cpp.i
-.PHONY : ECS/Component/Component.cpp.i
-
-ECS/Component/Component.s: ECS/Component/Component.cpp.s
-
-.PHONY : ECS/Component/Component.s
-
-# target to generate assembly for a file
-ECS/Component/Component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/Component.cpp.s
-.PHONY : ECS/Component/Component.cpp.s
-
-ECS/Component/Light.o: ECS/Component/Light.cpp.o
-
-.PHONY : ECS/Component/Light.o
-
-# target to build an object file
-ECS/Component/Light.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/Light.cpp.o
-.PHONY : ECS/Component/Light.cpp.o
-
-ECS/Component/Light.i: ECS/Component/Light.cpp.i
-
-.PHONY : ECS/Component/Light.i
-
-# target to preprocess a source file
-ECS/Component/Light.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/Light.cpp.i
-.PHONY : ECS/Component/Light.cpp.i
-
-ECS/Component/Light.s: ECS/Component/Light.cpp.s
-
-.PHONY : ECS/Component/Light.s
-
-# target to generate assembly for a file
-ECS/Component/Light.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/Light.cpp.s
-.PHONY : ECS/Component/Light.cpp.s
 
 ECS/Component/Material.o: ECS/Component/Material.cpp.o
 
@@ -817,12 +763,6 @@ help:
 	@echo "... ECS/Component/CameraComponent.o"
 	@echo "... ECS/Component/CameraComponent.i"
 	@echo "... ECS/Component/CameraComponent.s"
-	@echo "... ECS/Component/Component.o"
-	@echo "... ECS/Component/Component.i"
-	@echo "... ECS/Component/Component.s"
-	@echo "... ECS/Component/Light.o"
-	@echo "... ECS/Component/Light.i"
-	@echo "... ECS/Component/Light.s"
 	@echo "... ECS/Component/Material.o"
 	@echo "... ECS/Component/Material.i"
 	@echo "... ECS/Component/Material.s"

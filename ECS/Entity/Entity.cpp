@@ -2,33 +2,35 @@
 #include "Entity.h"
 #include "../Component/Component.h"
 void Entity::addComponent(Component* component,std:: string name) {
-    
+
     if(this->components.find(name) != this->components.end()) {
-    return; }
+        return; }
     this->components[name] = component;
-    
+
 }
 
 Component* Entity::getComponent(std:: string name) {
-    
-    if (components.find(name) != components.end()) 
+
+    if (components.find(name) != components.end())
     {
         return this->components.at(name);
-    } 
+    }
     return nullptr;
-   
+
 }
 
 void Entity::removeComponent(std::string name) {
-    
-      if (components.find(name) != components.end()) {
-         this->components.erase(name);
+
+    if (components.find(name) != components.end()) {
+        this->components.erase(name);
     }
 }
-Entity:: Entity() 
-{ 
+Entity:: Entity( Entity * p)
+{
+
+    parent =p;
     id =  entityCount ;
-     entityCount ++;
+    entityCount ++;
 
 }
 int Entity:: entityCount = 0;

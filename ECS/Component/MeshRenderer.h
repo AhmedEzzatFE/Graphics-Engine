@@ -5,14 +5,13 @@
 #include <mesh/mesh-utils.hpp>
 #include <string>
 #include "Component.h"
+#include "Material.h"
+
 class MeshRendererComponent : public Component{
    public:
-        
         our::Mesh * meshPtr;
-        our::ShaderProgram * shader; // should be ptr
-        void init(our::ShaderProgram *x,our::Mesh *y);
-        void update();
+        Material* Materialpt;
+        void init(Material* Materialptr,our::Mesh *y);
         void draw(glm::mat4 transformationMatrix,glm::mat4 cameraMatrix);
-        void destroy();
 
 };
