@@ -21,6 +21,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/CameraComponent.cpp" "/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles/PH1.dir/ECS/Component/CameraComponent.cpp.o"
+  "/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/CameraControllerComponent.cpp" "/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o"
   "/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/Material.cpp" "/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles/PH1.dir/ECS/Component/Material.cpp.o"
   "/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/MeshRenderer.cpp" "/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles/PH1.dir/ECS/Component/MeshRenderer.cpp.o"
   "/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/RenderState.cpp" "/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles/PH1.dir/ECS/Component/RenderState.cpp.o"

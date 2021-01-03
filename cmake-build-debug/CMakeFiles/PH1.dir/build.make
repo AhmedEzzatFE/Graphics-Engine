@@ -272,9 +272,22 @@ CMakeFiles/PH1.dir/ECS/Component/Material.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PH1.dir/ECS/Component/Material.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/Material.cpp -o CMakeFiles/PH1.dir/ECS/Component/Material.cpp.s
 
+CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o: CMakeFiles/PH1.dir/flags.make
+CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o: ../ECS/Component/CameraControllerComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o -c /home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/CameraControllerComponent.cpp
+
+CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/CameraControllerComponent.cpp > CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.i
+
+CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmad/Desktop/5raphics/Graphics-Engine/ECS/Component/CameraControllerComponent.cpp -o CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.s
+
 CMakeFiles/PH1.dir/vendor/glad/src/gl.c.o: CMakeFiles/PH1.dir/flags.make
 CMakeFiles/PH1.dir/vendor/glad/src/gl.c.o: ../vendor/glad/src/gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/PH1.dir/vendor/glad/src/gl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/PH1.dir/vendor/glad/src/gl.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PH1.dir/vendor/glad/src/gl.c.o   -c /home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/glad/src/gl.c
 
 CMakeFiles/PH1.dir/vendor/glad/src/gl.c.i: cmake_force
@@ -287,7 +300,7 @@ CMakeFiles/PH1.dir/vendor/glad/src/gl.c.s: cmake_force
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.o: CMakeFiles/PH1.dir/flags.make
 CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.o -c /home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui/imgui.cpp
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.i: cmake_force
@@ -300,7 +313,7 @@ CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.s: cmake_force
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.o: CMakeFiles/PH1.dir/flags.make
 CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.o: ../vendor/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.o -c /home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui/imgui_demo.cpp
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.i: cmake_force
@@ -313,7 +326,7 @@ CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.s: cmake_force
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_draw.cpp.o: CMakeFiles/PH1.dir/flags.make
 CMakeFiles/PH1.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PH1.dir/vendor/imgui/imgui_draw.cpp.o -c /home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui/imgui_draw.cpp
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_draw.cpp.i: cmake_force
@@ -326,7 +339,7 @@ CMakeFiles/PH1.dir/vendor/imgui/imgui_draw.cpp.s: cmake_force
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_widgets.cpp.o: CMakeFiles/PH1.dir/flags.make
 CMakeFiles/PH1.dir/vendor/imgui/imgui_widgets.cpp.o: ../vendor/imgui/imgui_widgets.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PH1.dir/vendor/imgui/imgui_widgets.cpp.o -c /home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui/imgui_widgets.cpp
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_widgets.cpp.i: cmake_force
@@ -339,7 +352,7 @@ CMakeFiles/PH1.dir/vendor/imgui/imgui_widgets.cpp.s: cmake_force
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o: CMakeFiles/PH1.dir/flags.make
 CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o: ../vendor/imgui/imgui_impl/imgui_impl_glfw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.o -c /home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.i: cmake_force
@@ -352,7 +365,7 @@ CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_glfw.cpp.s: cmake_force
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o: CMakeFiles/PH1.dir/flags.make
 CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o: ../vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.o -c /home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp
 
 CMakeFiles/PH1.dir/vendor/imgui/imgui_impl/imgui_impl_opengl3.cpp.i: cmake_force
@@ -380,6 +393,7 @@ PH1_OBJECTS = \
 "CMakeFiles/PH1.dir/common/texture/Texture2D.cpp.o" \
 "CMakeFiles/PH1.dir/common/texture/Sampler.cpp.o" \
 "CMakeFiles/PH1.dir/ECS/Component/Material.cpp.o" \
+"CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o" \
 "CMakeFiles/PH1.dir/vendor/glad/src/gl.c.o" \
 "CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.o" \
 "CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.o" \
@@ -406,6 +420,7 @@ PH1: CMakeFiles/PH1.dir/ECS/Entity/Entity.cpp.o
 PH1: CMakeFiles/PH1.dir/common/texture/Texture2D.cpp.o
 PH1: CMakeFiles/PH1.dir/common/texture/Sampler.cpp.o
 PH1: CMakeFiles/PH1.dir/ECS/Component/Material.cpp.o
+PH1: CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o
 PH1: CMakeFiles/PH1.dir/vendor/glad/src/gl.c.o
 PH1: CMakeFiles/PH1.dir/vendor/imgui/imgui.cpp.o
 PH1: CMakeFiles/PH1.dir/vendor/imgui/imgui_demo.cpp.o
@@ -419,7 +434,7 @@ PH1: /usr/lib/x86_64-linux-gnu/librt.so
 PH1: /usr/lib/x86_64-linux-gnu/libm.so
 PH1: /usr/lib/x86_64-linux-gnu/libX11.so
 PH1: CMakeFiles/PH1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable PH1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahmad/Desktop/5raphics/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable PH1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PH1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

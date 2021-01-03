@@ -83,5 +83,4 @@ void drawSmile(vec2 screenPos)
         drawSmile(screenPos);
     else if (keyboard==2)
         drawPacman(screenPos);
-        //drawSmile(screenPos);
     }

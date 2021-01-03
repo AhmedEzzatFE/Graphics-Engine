@@ -17,7 +17,6 @@
 #include <mesh/common-vertex-attributes.hpp>
 #include "../ECS/Entity/Entity.h"
 #include "../ECS/Component/TransformComponent.h"
-#include "../ECS/Component/CameraComponent.h"
 #include "../ECS/Component/CameraControllerComponent.h"
 #include "../ECS/Component/MeshRenderer.h"
 #include "../ECS/Component/RenderState.h"
@@ -105,7 +104,7 @@ void checkProgramLinkingErrors(GLuint program)
 #pragma endregion
 
 GLuint program = 0, vertex_array = 0;
-int keyboard = 2;
+int keyShaderOption = 2;
 glm::vec2 mouse = glm::vec2(0, 0);
 GameState *switchState(int state);
 
@@ -138,7 +137,7 @@ class PlayState : public GameState
     glm::mat4 cameraMatrix;
     Entity *CameraEntity = new Entity(NULL);
     CameraComponent *cameraComponent = new CameraComponent();
-    CameraControllerComponent *cameraController = new CameraControllerComponent();
+    CameraControllerComponent *cameraController = new CameraControllerComponent(app,cameraComponent);
 
     //////////////////////// Texture 2d and Sampler///////////////////////
     Texture2D* TextureObject = new Texture2D();
@@ -178,12 +177,11 @@ class PlayState : public GameState
         //Camera Operations
         CameraEntity->addComponent(cameraComponent, "camera");
         CameraEntity->addComponent(cameraController, "controller");
-        cameraMatrix = cameraComponent->getcameraMatrix();
+        cameraMatrix = cameraComponent->getCameraMatrix();
         cameraComponent->setEyePosition({0, 0, 40});
         cameraComponent->setTarget({0, 0, 0});
         cameraComponent->setUp({0, 1, 0});
         cameraComponent->setupPerspective(glm::pi<float>()/2, static_cast<float>(width)/height, 0.1f, 100.0f);
-        cameraController->initialize(app, cameraComponent);
         Entities.push_back(CameraEntity);
 
         //Initializing Material
@@ -218,7 +216,7 @@ class PlayState : public GameState
 
         shader.set("lod", level_of_detail);
         shader.set("zoom", zoom);
-        cameraMatrix = cameraComponent->getcameraMatrix();
+        cameraMatrix = cameraComponent->getCameraMatrix();
 
         for (unsigned int i = 0; i < Entities.size(); i++)
         {
@@ -247,7 +245,7 @@ class PlayState : public GameState
             {
                 TransformComponent* transComponent = ((TransformComponent *)Entities[i]->getComponent("transform"));
                 glm::mat4 transformationMatrix = transComponent->to_mat4();
-                glm::mat4 camTransformationMatrix =((CameraComponent *) Entities[0]->getComponent("camera"))->getcameraMatrix();
+                glm::mat4 camTransformationMatrix =((CameraComponent *) Entities[0]->getComponent("camera"))->getCameraMatrix();
 
 
                 shader.set("light.diffuse", light.diffuse);
@@ -299,7 +297,6 @@ class PlayState : public GameState
     }
 
 };
-PlayState *play = new PlayState();
 
 class MenuState : public GameState
 {
@@ -341,13 +338,17 @@ public:
         // Even if that vertex array does not send any data down the pipeline
 
         //Following Code is for phase 1
-//        if (app->getKeyboard().justPressed(GLFW_KEY_1))
-//            keyboard = 1;
-//        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
-//            keyboard = 2;
+        if (app->getKeyboard().justPressed(GLFW_KEY_1))
+            keyShaderOption = 1;
+        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
+            keyShaderOption = 2;
+        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
+           keyShaderOption = 3;
+        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
+            keyShaderOption = 4;
 
         GLuint keyboard_uniform_location = glGetUniformLocation(program, "keyboard");
-        glUniform1i(keyboard_uniform_location, keyboard);
+        glUniform1i(keyboard_uniform_location, keyShaderOption);
 
         mouse = app->getMouse().getMousePosition();
         GLuint mouse_uniform_location = glGetUniformLocation(program, "mouse");
@@ -368,26 +369,20 @@ public:
     }
 };
 
-MenuState *menu = new MenuState();
+MenuState *mState = new MenuState();
+PlayState *pState = new PlayState();
 
 GameState *switchState(int state)
 {
-
-    if (state == 1)
-    {
-        return menu;
-    }
-    else if (state == 2)
-    {
-        return play;
-    }
+    if (state == 1) return mState;
+    return pState;
 }
 
 
 int main(int argc, char **argv)
 {
     // ShaderIntroductionApplication().gotoState(menu);
-    app->gotoState(menu);
+    app->gotoState(mState);
 
     // return ShaderIntroductionApplication().run();
     return app->run();

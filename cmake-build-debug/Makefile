@@ -183,6 +183,33 @@ ECS/Component/CameraComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/CameraComponent.cpp.s
 .PHONY : ECS/Component/CameraComponent.cpp.s
 
+ECS/Component/CameraControllerComponent.o: ECS/Component/CameraControllerComponent.cpp.o
+
+.PHONY : ECS/Component/CameraControllerComponent.o
+
+# target to build an object file
+ECS/Component/CameraControllerComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.o
+.PHONY : ECS/Component/CameraControllerComponent.cpp.o
+
+ECS/Component/CameraControllerComponent.i: ECS/Component/CameraControllerComponent.cpp.i
+
+.PHONY : ECS/Component/CameraControllerComponent.i
+
+# target to preprocess a source file
+ECS/Component/CameraControllerComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.i
+.PHONY : ECS/Component/CameraControllerComponent.cpp.i
+
+ECS/Component/CameraControllerComponent.s: ECS/Component/CameraControllerComponent.cpp.s
+
+.PHONY : ECS/Component/CameraControllerComponent.s
+
+# target to generate assembly for a file
+ECS/Component/CameraControllerComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PH1.dir/build.make CMakeFiles/PH1.dir/ECS/Component/CameraControllerComponent.cpp.s
+.PHONY : ECS/Component/CameraControllerComponent.cpp.s
+
 ECS/Component/Material.o: ECS/Component/Material.cpp.o
 
 .PHONY : ECS/Component/Material.o
@@ -763,6 +790,9 @@ help:
 	@echo "... ECS/Component/CameraComponent.o"
 	@echo "... ECS/Component/CameraComponent.i"
 	@echo "... ECS/Component/CameraComponent.s"
+	@echo "... ECS/Component/CameraControllerComponent.o"
+	@echo "... ECS/Component/CameraControllerComponent.i"
+	@echo "... ECS/Component/CameraControllerComponent.s"
 	@echo "... ECS/Component/Material.o"
 	@echo "... ECS/Component/Material.i"
 	@echo "... ECS/Component/Material.s"

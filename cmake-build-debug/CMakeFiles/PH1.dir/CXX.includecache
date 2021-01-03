@@ -35,6 +35,8 @@ glm/gtx/fast_trigonometry.hpp
 -
 application.hpp
 -
+CameraComponent.h
+../ECS/Component/CameraComponent.h
 
 ../ECS/Component/Component.h
 glm/glm.hpp
@@ -2277,8 +2279,6 @@ mesh/common-vertex-attributes.hpp
 /home/ahmad/Desktop/5raphics/ECS/Entity/Entity.h
 ../ECS/Component/TransformComponent.h
 /home/ahmad/Desktop/5raphics/ECS/Component/TransformComponent.h
-../ECS/Component/CameraComponent.h
-/home/ahmad/Desktop/5raphics/ECS/Component/CameraComponent.h
 ../ECS/Component/CameraControllerComponent.h
 /home/ahmad/Desktop/5raphics/ECS/Component/CameraControllerComponent.h
 ../ECS/Component/MeshRenderer.h

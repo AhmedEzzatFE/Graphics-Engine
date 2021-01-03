@@ -7,6 +7,7 @@ enum class LightType {
 
 class LightComponent {
 public:
+    bool enabled;
     glm::vec3 diffuse, specular, ambient;
     glm::vec3 position; // Used for Point and Spot Lights only
     glm::vec3 direction; // Used for Directional and Spot Lights only
@@ -18,6 +19,7 @@ public:
     } spot_angle; // Used for Spot Lights only
 
     LightComponent (){
+        enabled = true;
         diffuse = {1,1,1};
         specular = {1,1,1};
         ambient = {0.1f, 0.1f, 0.1f};
