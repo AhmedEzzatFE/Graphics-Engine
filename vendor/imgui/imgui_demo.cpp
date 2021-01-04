@@ -5149,7 +5149,7 @@ static void ShowExampleAppCustomRendering(bool* p_open)
 // [SECTION] Example App: Documents Handling / ShowExampleAppDocuments()
 //-----------------------------------------------------------------------------
 
-// Simplified structure to mimic a Document model
+// Simplified structure to mimic a Document cube_model
 struct MyDocument
 {
     const char* Name;       // Document title

@@ -8,7 +8,6 @@
 
 void Material::init(our::ShaderProgram * ShaderPointer){
     MatrixShader = ShaderPointer;
-    // 3ayz a3rf el arkam de bta3t eh
     diffuse = {0.96,0.9,0.64};
     specular = {0.4,0.4,0.4};
     ambient = {0.96, 0.9, 0.64};

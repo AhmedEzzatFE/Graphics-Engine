@@ -123,17 +123,19 @@ our::Application *app = new ShaderIntroductionApplication();
 
 class PlayState : public GameState
 {
-    our::ShaderProgram shader;
-    our::ShaderProgram *ptrShader;
-    our::Mesh model;
-    our::Mesh model2;
-    our::Mesh model3;
+    our::ShaderProgram shader, shader2;
+    our::ShaderProgram *ptrShader,*terrainShader;
+    our::Mesh cube_model;
+    our::Mesh sun_model;
+    our::Mesh plane_model;
     std::vector<Entity *> Entities;
     std::vector<TransformComponent *> transforms;
     std::vector<RenderState *> renderStates;
     std::vector<MeshRendererComponent *> meshRenderers;
+    std::vector<our::Mesh*> meshes;
     int level_of_detail = 0;
     float zoom = 1;
+    Sampler *height_sampler;
     glm::mat4 cameraMatrix;
     Entity *CameraEntity = new Entity(NULL);
     CameraComponent *cameraComponent = new CameraComponent();
@@ -142,9 +144,7 @@ class PlayState : public GameState
     //////////////////////// Texture 2d and Sampler///////////////////////
     Texture2D* TextureObject = new Texture2D();
     Sampler* SampleObject = new Sampler();
-    MeshRendererComponent *meshObj2 = new MeshRendererComponent();
-    glm::mat4 transformationMatrix;
-    glm::mat4 transformationMatrix2;
+
     LightComponent light = LightComponent();
     ////////Adding Material
     Material * MaterialObj= new Material();
@@ -167,13 +167,21 @@ class PlayState : public GameState
         int width, height;
         glfwGetFramebufferSize(app->window, &width, &height);
 
+
         shader.create();
         shader.attach("assets/shaders/light/light_transform.vert", GL_VERTEX_SHADER);
         shader.attach("assets/shaders/light/directional_light.frag", GL_FRAGMENT_SHADER);
         shader.link();
+
+//        shader2.create();
+//        shader2.attach("assets/shaders/ex24_displacement/terrain.frag", GL_VERTEX_SHADER);
+//        shader2.attach("assets/shaders/ex24_displacement/terrain.vert", GL_FRAGMENT_SHADER);
+//        shader2.link();
+
+
         glUseProgram(shader);
         ptrShader = &shader;
-
+        terrainShader = &shader2;
         //Camera Operations
         CameraEntity->addComponent(cameraComponent, "camera");
         CameraEntity->addComponent(cameraController, "controller");
@@ -188,15 +196,33 @@ class PlayState : public GameState
         MaterialObj->init(ptrShader);
         MaterialObj->tint = {1,1,1,1};
 
-        our::mesh_utils::Cuboid(model, false);
-        createObject({0, 0, 0}, {0, 0, 0}, {5, 5, 5}, model);
+        our::mesh_utils::Cuboid(cube_model, false);
+        meshes.push_back(&cube_model);
+        createObject({0, 0, 0}, {0, 0, 0}, {5, 5, 5}, cube_model);
 
 
-        our::mesh_utils::Sphere(model2, {32, 16}, false);
-        createObject({7, 10, -7}, {0, 0, 0}, {5, 5, 5}, model2);
+        our::mesh_utils::Sphere(sun_model, {32, 16}, false);
+        meshes.push_back(&sun_model);
+        createObject({7, 10, -7}, {0, 0, 0}, {5, 5, 5}, sun_model);
 
 
+        our::mesh_utils::Plane(plane_model, {1, 1}, false, {0, 0, 0},
+                               {1, 1}, {0, 0}, {100, 100});
+        height_sampler = new Sampler();
+        meshes.push_back(&plane_model);
+        createObject({0,0, -50}, {0, 0, 0}, {1000, 1000, 300}, plane_model);
 
+        glSamplerParameteri(height_sampler->getSampler(), GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glSamplerParameteri(height_sampler->getSampler(), GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        // The height texture won't be repeated so no need to use repeat.
+        glSamplerParameteri(height_sampler->getSampler(), GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+        glSamplerParameteri(height_sampler->getSampler(), GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+//        glEnable(GL_DEPTH_TEST);
+//        glDepthFunc(GL_LEQUAL);
+//
+//        glEnable(GL_CULL_FACE);
+//        glCullFace(GL_BACK);
+//        glFrontFace(GL_CCW);
         glClearColor(0, 0, 0, 0);
 
     }
@@ -272,7 +298,8 @@ class PlayState : public GameState
     void onExit() override
     {
         shader.destroy();
-        model.destroy();
+        for ( int i = 0; i<meshes.size(); i++) meshes[i]->destroy();
+//        cube_model.destroy();
         cameraController->release();
     }
 
@@ -317,8 +344,8 @@ public:
         program = glCreateProgram(); // We ask GL to create a program for us and return a uint that we will use it by.
         // (act as a pointer to the created program).
 
-        attachShader(program, "assets/shaders/PH1.vert", GL_VERTEX_SHADER);   // read the vertex shader and attach it to the program.
-        attachShader(program, "assets/shaders/PH1.frag", GL_FRAGMENT_SHADER); // read the fragment shader and attach it to the program.
+        attachShader(program, "assets/shaders/phase1.vert", GL_VERTEX_SHADER);   // read the vertex shader and attach it to the program.
+        attachShader(program, "assets/shaders/phase1.frag", GL_FRAGMENT_SHADER); // read the fragment shader and attach it to the program.
 
         glLinkProgram(program);             // Link the vertex and fragment shader together.
         checkProgramLinkingErrors(program); // Check if there is any link errors between the fragment shader and vertex shader.

@@ -36,7 +36,7 @@ namespace glm
 	GLM_FUNC_QUALIFIER vec<3, T, Q> project(vec<3, T, Q> const& obj, mat<4, 4, T, Q> const& model, mat<4, 4, T, Q> const& proj, vec<4, U, Q> const& viewport)
 	{
 #		if GLM_CONFIG_CLIP_CONTROL & GLM_CLIP_CONTROL_ZO_BIT
-			return projectZO(obj, model, proj, viewport);
+			return projectZO(obj, cube_model, proj, viewport);
 #		else
 			return projectNO(obj, model, proj, viewport);
 #		endif
@@ -79,7 +79,7 @@ namespace glm
 	GLM_FUNC_QUALIFIER vec<3, T, Q> unProject(vec<3, T, Q> const& win, mat<4, 4, T, Q> const& model, mat<4, 4, T, Q> const& proj, vec<4, U, Q> const& viewport)
 	{
 #		if GLM_CONFIG_CLIP_CONTROL & GLM_CLIP_CONTROL_ZO_BIT
-			return unProjectZO(win, model, proj, viewport);
+			return unProjectZO(win, cube_model, proj, viewport);
 #		else
 			return unProjectNO(win, model, proj, viewport);
 #		endif

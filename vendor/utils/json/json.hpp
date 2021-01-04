@@ -5488,7 +5488,7 @@ class json_sax_dom_parser
 
     /// the parsed JSON value
     BasicJsonType& root;
-    /// stack to model hierarchy of values
+    /// stack to cube_model hierarchy of values
     std::vector<BasicJsonType*> ref_stack {};
     /// helper to hold the reference for the next object element
     BasicJsonType* object_element = nullptr;
@@ -5776,7 +5776,7 @@ class json_sax_dom_callback_parser
 
     /// the parsed JSON value
     BasicJsonType& root;
-    /// stack to model hierarchy of values
+    /// stack to cube_model hierarchy of values
     std::vector<BasicJsonType*> ref_stack {};
     /// stack to manage which values to keep
     std::vector<bool> keep_stack {};
@@ -6805,7 +6805,7 @@ class lexer : public lexer_base<BasicJsonType>
     The function is realized with a deterministic finite state machine derived
     from the grammar described in RFC 7159. Starting in state "init", the
     input is read and used to determined the next state. Only state "done"
-    accepts the number. State "error" is a trap state to model errors. In the
+    accepts the number. State "error" is a trap state to cube_model errors. In the
     table below, "anything" means any character but the ones listed before.
 
     state    | 0        | 1-9      | e E      | +       | -       | .        | anything
@@ -16627,7 +16627,7 @@ and `from_json()` (@ref adl_serializer by default)
    other compatible types, using unqualified function call @ref swap().
  - [NullablePointer](https://en.cppreference.com/w/cpp/named_req/NullablePointer):
    JSON values can be compared against `std::nullptr_t` objects which are used
-   to model the `null` value.
+   to cube_model the `null` value.
 - Container
  - [Container](https://en.cppreference.com/w/cpp/named_req/Container):
    JSON values can be used like STL containers and provide iterator access.

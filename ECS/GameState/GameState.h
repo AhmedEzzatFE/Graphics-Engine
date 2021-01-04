@@ -10,7 +10,6 @@
  class GameState {
 
       public:
-        //explicit GameState();
         virtual void onEnter();
         virtual void onDraw(double deltaTime);
         virtual void onExit();

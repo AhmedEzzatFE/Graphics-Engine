@@ -24,7 +24,7 @@ class Sampler {
 
     GLenum polygon_mode = GL_FILL;
 
-    GLuint samplerObj;
+    GLuint sampler;
     GLsizei numOfSamplers;
 public:
     Sampler();
@@ -32,12 +32,11 @@ public:
     void DestroySampler();
     void AttachSample();
     void GenSampler();
-
-    Sampler(Sampler const &temp) {
-        samplerObj=temp.samplerObj;
-    }
+    GLuint getSampler();
+    Sampler(Sampler &sampler);
+    Sampler & operator=(Sampler &sampler);
     Sampler &operator=(Sampler const &) = delete;
-
+    ~Sampler();
 // setter here GLint mag,GLint min,GLint s,GLint t,GLint param,glm::vec4  borderCol, GLfloat anisotropy ,GLenum polymode
 
 
