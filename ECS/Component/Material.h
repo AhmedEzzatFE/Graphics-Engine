@@ -9,7 +9,7 @@ class Material{
 public:
     our::ShaderProgram * MatrixShader;
     glm::vec4 tint;
-    glm::vec3 specular_tint, emissive_tint;
+    glm::vec3 specularTint, emissive;
     glm::vec3 diffuse, specular, ambient;
     float shininess;
     void init(our::ShaderProgram* ShaderPointer);

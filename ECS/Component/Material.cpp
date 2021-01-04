@@ -2,9 +2,6 @@
 #include "glm/ext.hpp"
 #include "glm/gtx/string_cast.hpp"
 
-/*void Material::settint(glm::vec4 t){
-    this.tint = t ;
-};*/
 
 void Material::init(our::ShaderProgram * ShaderPointer){
     MatrixShader = ShaderPointer;

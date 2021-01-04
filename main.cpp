@@ -133,7 +133,7 @@ class PlayState : public GameState
     std::vector<RenderState *> renderStates;
     std::vector<MeshRendererComponent *> meshRenderers;
     std::vector<our::Mesh*> meshes;
-    int level_of_detail = 0;
+    int mml = 0;
     float zoom = 1;
     Sampler *height_sampler;
     glm::mat4 cameraMatrix;
@@ -239,8 +239,7 @@ class PlayState : public GameState
         TextureObject->LinkTexture();
         SampleObject->AttachSample();
         shader.set("sampler", 0);
-
-        shader.set("lod", level_of_detail);
+        shader.set("lod", mml);
         shader.set("zoom", zoom);
         cameraMatrix = cameraComponent->getCameraMatrix();
 

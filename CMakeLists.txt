@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)   # Selects the minimum version of CMake required to run this file
-project(PH1 VERSION 0.1.0)          # Here we select the project name and version
+project(tears_engine VERSION 0.1.0)          # Here we select the project name and version
 
 # Here we select C++17 with all the standards required and all compiler-specific extensions disabled
 set(CMAKE_CXX_STANDARD 17)
@@ -53,5 +53,5 @@ include_directories(
         vendor/utils
         ECS
 )
-add_executable(PH1 main.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
-target_link_libraries(PH1 glfw)
+add_executable(tears_engine main.cpp ${COMMON_SOURCES} ${VENDOR_SOURCES})
+target_link_libraries(tears_engine glfw)

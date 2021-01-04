@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ahmad/Desktop/5raphics/Graphics-Engine/common -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/glfw/include -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/glad/include -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/glm -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/utils -I/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS 
+C_INCLUDES = -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/common -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/glfw/include -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/glad/include -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/glm -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/imgui -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/utils -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/ECS 
 
 CXX_FLAGS = -g   -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ahmad/Desktop/5raphics/Graphics-Engine/common -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/glfw/include -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/glad/include -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/glm -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/imgui -I/home/ahmad/Desktop/5raphics/Graphics-Engine/vendor/utils -I/home/ahmad/Desktop/5raphics/Graphics-Engine/ECS 
+CXX_INCLUDES = -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/common -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/glfw/include -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/glad/include -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/glm -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/imgui -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/vendor/utils -I/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/ECS 
 
