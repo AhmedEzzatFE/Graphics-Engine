@@ -55,19 +55,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/137/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/hussein/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/137/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/hussein/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ahmad/Desktop/DeliveryDay/Final/tears-engine
+CMAKE_SOURCE_DIR = /home/hussein/Desktop/GFX2/Graphics-Engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -132,14 +132,14 @@ vendor/glfw/src/clean: vendor/glfw/src/CMakeFiles/glfw.dir/clean
 CMakeFiles/tears_engine.dir/all: vendor/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target tears_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target tears_engine"
 .PHONY : CMakeFiles/tears_engine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tears_engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug/CMakeFiles 41
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tears_engine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/tears_engine.dir/rule
 
 # Convenience name for target.
@@ -159,14 +159,14 @@ CMakeFiles/tears_engine.dir/clean:
 vendor/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target glfw"
 .PHONY : vendor/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 vendor/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug/CMakeFiles 0
 .PHONY : vendor/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.

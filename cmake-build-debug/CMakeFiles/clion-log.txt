@@ -1,5 +1,5 @@
-/snap/clion/137/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ahmad/Desktop/DeliveryDay/Final/tears-engine
+/home/hussein/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/hussein/Desktop/GFX2/Graphics-Engine
 -- Using X11 for window creation
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/ahmad/Desktop/DeliveryDay/Final/tears-engine/cmake-build-debug
+-- Build files have been written to: /home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug

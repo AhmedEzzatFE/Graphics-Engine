@@ -6,13 +6,26 @@
 
 Sampler::Sampler() {sampler=0;}
 void Sampler::InitializeSampler()
-{  glGenSamplers(1, &this->sampler);}
+{  glGenSamplers(1, &sampler);}
 
 void Sampler::DestroySampler()
 {  glDeleteSamplers(1, &sampler);}
 
-void Sampler::AttachSample()
-{   glBindSampler(0, sampler);
+void Sampler::AttachSample(int unit)
+{
+    glBindSampler(unit, sampler);
+
+
+
+}
+
+GLuint Sampler::getSampler() {
+    return sampler;
+}
+void Sampler::GenSampler()
+{
+    glGenSamplers(1, &this->sampler);
+    // TODO CHECK SAMPLER PARAMETERS
     glSamplerParameteri(sampler, GL_TEXTURE_MAG_FILTER, magnification_filter);
     glSamplerParameteri(sampler, GL_TEXTURE_MIN_FILTER, minification_filter);
     glSamplerParameteri(sampler, GL_TEXTURE_WRAP_S, wrap_s);
@@ -21,12 +34,6 @@ void Sampler::AttachSample()
     glSamplerParameterf(sampler, GL_TEXTURE_MAX_ANISOTROPY_EXT, max_anisotropy);
     glPolygonMode(GL_FRONT_AND_BACK, polygon_mode);
 }
-
-GLuint Sampler::getSampler() {
-    return sampler;
-}
-void Sampler::GenSampler()
-{    glGenSamplers(1, &this->sampler); }
 
 
 

@@ -8,12 +8,13 @@
     public:
 
     bool depth=false;
+    bool blend=false;
+    bool culling=false;
     GLenum depth_function;
     float clear_depth = 1.0f;
     bool depth_mask = true;
     glm::bvec4 color_mask = {true, true, true, true};
 
-    bool culling=false;
     GLenum culled_face ;
     GLenum front_face_winding;
 

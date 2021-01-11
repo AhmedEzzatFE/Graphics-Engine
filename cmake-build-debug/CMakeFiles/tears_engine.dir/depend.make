@@ -448,10 +448,19 @@ CMakeFiles/tears_engine.dir/ECS/Component/CameraControllerComponent.cpp.o: ../EC
 CMakeFiles/tears_engine.dir/ECS/Component/CameraControllerComponent.cpp.o: ../ECS/Component/Component.h
 CMakeFiles/tears_engine.dir/ECS/Component/CameraControllerComponent.cpp.o: ../ECS/Entity/Entity.h
 
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../ECS/GameState/GameState.h
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/application.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/data-types.h
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/imgui-utils/utils.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/input/keyboard.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/input/mouse.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/shader.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/texture/Sampler.h
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/texture/Texture2D.h
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../common/texture/texture-utils.h
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glm/glm/common.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glm/glm/detail/_fixes.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glm/glm/detail/_noise.hpp
@@ -837,16 +846,27 @@ CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glm/glm/vec4
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/glm/glm/vector_relational.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/imgui/imconfig.h
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../vendor/imgui/imgui.h
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../ECS/Component/Component.h
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../ECS/Component/Material.cpp
 CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../ECS/Component/Material.h
+CMakeFiles/tears_engine.dir/ECS/Component/Material.cpp.o: ../ECS/Component/RenderState.h
 
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../ECS/GameState/GameState.h
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/application.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/data-types.h
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/imgui-utils/utils.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/input/keyboard.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/input/mouse.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/mesh/mesh-utils.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/mesh/mesh.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/mesh/vertex-attributes.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/shader.hpp
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/texture/Sampler.h
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/texture/Texture2D.h
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../common/texture/texture-utils.h
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../vendor/glm/glm/common.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../vendor/glm/glm/detail/_fixes.hpp
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../vendor/glm/glm/detail/_swizzle.hpp
@@ -1054,6 +1074,7 @@ CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../ECS/Component/C
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../ECS/Component/Material.h
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../ECS/Component/MeshRenderer.cpp
 CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../ECS/Component/MeshRenderer.h
+CMakeFiles/tears_engine.dir/ECS/Component/MeshRenderer.cpp.o: ../ECS/Component/RenderState.h
 
 CMakeFiles/tears_engine.dir/ECS/Component/RenderState.cpp.o: ../ECS/GameState/GameState.h
 CMakeFiles/tears_engine.dir/ECS/Component/RenderState.cpp.o: ../common/application.hpp
