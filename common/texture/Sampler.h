@@ -30,7 +30,7 @@ public:
     Sampler();
     void InitializeSampler();
     void DestroySampler();
-    void AttachSample();
+    void AttachSample(int unit);
     void GenSampler();
     GLuint getSampler();
     Sampler(Sampler &sampler);

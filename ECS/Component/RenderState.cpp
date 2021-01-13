@@ -34,8 +34,15 @@ void RenderState:: setCulling(bool x,GLenum culled_face,GLenum front_face_windin
     glFrontFace(front_face_winding);
 }
 void RenderState:: setBlending(bool x){
-    if(x) glEnable(GL_BLEND);
-    else glDisable(GL_BLEND);
+    if(x) {
+        blend = true;
+        glEnable(GL_BLEND);
+    }
+    else {
+        blend = false;
+        glDisable(GL_BLEND);
+    }
+
       
     glBlendEquation(blend_equation);
     glBlendFunc(blend_source_function, blend_destination_function);
