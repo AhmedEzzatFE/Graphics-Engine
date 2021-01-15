@@ -1,4 +1,4 @@
-/home/hussein/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/hussein/Desktop/GFX2/Graphics-Engine
+/snap/clion/138/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ahmad/Desktop/AlexRun/Graphics/Graphics-Engine
 -- The C compiler identification is GNU 9.3.0
 -- The CXX compiler identification is GNU 9.3.0
 -- Check for working C compiler: /usr/bin/cc
@@ -34,6 +34,8 @@
 -- Looking for remove - found
 -- Looking for shmat
 -- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug
+-- Build files have been written to: /home/ahmad/Desktop/AlexRun/Graphics/Graphics-Engine/cmake-build-debug

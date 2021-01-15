@@ -6,7 +6,7 @@ C_FLAGS = -g -fPIC   -Wall -std=gnu99
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/hussein/Desktop/GFX2/Graphics-Engine/vendor/glfw/include -I/home/hussein/Desktop/GFX2/Graphics-Engine/vendor/glfw/src -I/home/hussein/Desktop/GFX2/Graphics-Engine/cmake-build-debug/vendor/glfw/src 
+C_INCLUDES = -I/home/ahmad/Desktop/AlexRun/Graphics/Graphics-Engine/vendor/glfw/include -I/home/ahmad/Desktop/AlexRun/Graphics/Graphics-Engine/vendor/glfw/src -I/home/ahmad/Desktop/AlexRun/Graphics/Graphics-Engine/cmake-build-debug/vendor/glfw/src 
 
 # Custom flags: vendor/glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

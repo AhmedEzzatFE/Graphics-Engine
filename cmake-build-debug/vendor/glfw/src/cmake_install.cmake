@@ -1,4 +1,4 @@
-# Install script for directory: /home/hussein/Desktop/GFX2/Graphics-Engine/vendor/glfw/src
+# Install script for directory: /home/ahmad/Desktop/AlexRun/Graphics/Graphics-Engine/vendor/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -119,7 +119,7 @@ class ShaderIntroductionApplication : public our::Application
 };
 
 our::Application *app = new ShaderIntroductionApplication();
-
+int width, height;
 class PlayState : public GameState
 {
     our::ShaderProgram shader, shader2;
@@ -284,7 +284,7 @@ class PlayState : public GameState
         SampleObject->InitializeSampler();
 
 //        TextureObject2->ActivateTexture("assets/images/ex24_displacement/grass_ground_d.jpg", true);
-        int width, height;
+//        int width, height;
         glfwGetFramebufferSize(app->window, &width, &height);
 
 
@@ -624,6 +624,7 @@ class PlayState : public GameState
     }
 
 };
+PlayState *pState = new PlayState();
 
 class MenuState : public GameState
 {
@@ -665,15 +666,16 @@ public:
         // Even if that vertex array does not send any data down the pipeline
 
         //Following Code is for phase 1
-        if (app->getKeyboard().justPressed(GLFW_KEY_1))
-            keyShaderOption = 1;
-        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
-            keyShaderOption = 2;
-        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
-           keyShaderOption = 3;
-        else if (app->getKeyboard().justPressed(GLFW_KEY_2))
-            keyShaderOption = 4;
+        if (app->getMouse().justReleased(0))
+        {
+            if (app->getMouse().getMousePosition()[0] < (width/2))
+                app->gotoState(pState);
+            else {
+                //TODO:
+                glfwDestroyWindow(app->window);
 
+            }
+        }
         GLuint keyboard_uniform_location = glGetUniformLocation(program, "keyboard");
         glUniform1i(keyboard_uniform_location, keyShaderOption);
 
@@ -696,8 +698,8 @@ public:
     }
 };
 
+
 MenuState *mState = new MenuState();
-PlayState *pState = new PlayState();
 
 GameState *switchState(int state)
 {
