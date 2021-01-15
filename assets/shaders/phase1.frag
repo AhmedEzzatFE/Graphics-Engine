@@ -156,7 +156,14 @@ void mainImage( out vec4 fragColor, vec2 fragCoord )
         vec4 layer1 = vec4(rgb(0.0, 0.0, 0.0),1.0);
 
         vec3 red = rgb(256.0, 256.0, 256.0);
-        vec4 layer2 = circle(circleUV, circleCenter, radius, red);
+
+        vec2 circleUV2 = gl_FragCoord.xy - vec2(iResolution.x*0.3,0);
+        vec2 circleCenter2 = iResolution.xy * 0.5;
+        float radius2 = 0.25 * iResolution.y;
+        vec4 layer3 = circle(circleUV2, circleCenter2, radius2, red) ;
+
+
+        vec4 layer2 = circle(circleUV, circleCenter, radius, red) + layer3;
         layer2 = layer2 - vec4(smoothstep(0.41,0.4,d));
 
         // Blend the two
